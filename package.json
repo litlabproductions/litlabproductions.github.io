@@ -1,43 +1,46 @@
 {
-  "name": "jekyll-text-theme",
-  "version": "2.2.4",
-  "description": "A super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.",
-  "scripts": {
-    "build": "bundle exec jekyll build",
-    "serve": "bundle exec jekyll serve -H 0.0.0.0",
-    "default": "bundle exec jekyll serve -H 0.0.0.0 -t",
-    "dev": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.dev.yml",
-    "demo-dev": "bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "demo-beta": "JEKYLL_ENV=beta bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "demo-production": "JEKYLL_ENV=production bundle exec jekyll serve -H 0.0.0.0 -t --config ./docs/_config.yml",
-    "eslint": "eslint \"_includes/**/*.js\"",
-    "eslint-fix": "eslint \"_includes/**/*.js\" --fix",
-    "stylelint": "stylelint --syntax scss \"_sass/**/*.scss\"",
-    "stylelint-fix": "stylelint --syntax scss \"_sass/**/*.scss\" --fix",
-    "gem-build": "rm -fv jekyll-text-theme-*.gem && gem build jekyll-text-theme.gemspec",
-    "gem-push": "gem push jekyll-text-theme-*.gem"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/kitian616/jekyll-TeXt-theme.git"
-  },
-  "keywords": [
-    "jekyll",
-    "jekyll-theme",
-    "jekyll-template"
-  ],
-  "author": "Tian Qi",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/kitian616/jekyll-TeXt-theme/issues"
-  },
-  "homepage": "https://github.com/kitian616/jekyll-TeXt-theme",
-  "devDependencies": {
-    "eslint": "^5.4.0",
-    "stylelint": "^9.5.0",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-order": "^1.0.0",
-    "stylelint-scss": "^3.3.0"
-  }
+    "title": "New Age",
+    "name": "startbootstrap-new-age",
+    "version": "5.0.2",
+    "description": "A one page app landing page HTML theme for Bootstrap.",
+    "keywords": [
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
+    ],
+    "homepage": "https://startbootstrap.com/template-overviews/new-age",
+    "bugs": {
+        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age/issues",
+        "email": "feedback@startbootstrap.com"
+    },
+    "license": "MIT",
+    "author": "Start Bootstrap",
+    "contributors": [
+        "David Miller (http://davidmiller.io/)"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BlackrockDigital/startbootstrap-new-age.git"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "5.7.0",
+        "bootstrap": "4.2.1",
+        "jquery": "3.3.1",
+        "jquery.easing": "^1.4.1",
+        "simple-line-icons": "2.4.1"
+    },
+    "devDependencies": {
+        "browser-sync": "2.26.3",
+        "gulp": "4.0.0",
+        "gulp-autoprefixer": "6.0.0",
+        "gulp-clean-css": "4.0.0",
+        "gulp-header": "2.0.7",
+        "gulp-plumber": "^1.2.1",
+        "gulp-rename": "1.4.0",
+        "gulp-sass": "4.0.2",
+        "gulp-uglify": "3.0.1"
+    }
 }
