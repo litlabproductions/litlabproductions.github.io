@@ -682,13 +682,50 @@ var pJS = function(tag_id, params){
     /* draw a line between p1 and p2 if the distance between them is under the config distance */
     if(dist <= pJS.particles.line_linked.distance){
 
+     
       var opacity_line = pJS.particles.line_linked.opacity - (dist / (1/pJS.particles.line_linked.opacity)) / pJS.particles.line_linked.distance;
-
+      
       if(opacity_line > 0){        
+        var color1_name = "#00C4BA";
+        var color2_name = "#00B5C8";
+        var color3_name = "#00A6D6";
+        var color4_name = "#0098E3";
+        var color5_name = "#0089F1";
+        var color6_name = "#007AFF";
+
+        var color1 = hexToRgb(color1_name);
+        var color2 = hexToRgb(color2_name);
+        var color3 = hexToRgb(color3_name);
+        var color4 = hexToRgb(color4_name);
+        var color5 = hexToRgb(color5_name);
+        var color6 = hexToRgb(color6_name);
+
+        var current_color;
+        // New implementaion to color lines.
         
-        /* style */
-        var color_line = pJS.particles.line_linked.color_rgb_line;
-        pJS.canvas.ctx.strokeStyle = 'rgba('+color_line.r+','+color_line.g+','+color_line.b+','+opacity_line+')';
+        var seg1 = pJS.canvas.w / 5;
+        var seg2 = pJS.canvas.w / 3;
+        var seg3 = pJS.canvas.w / 2;
+        var seg4 = (pJS.canvas.w / 2) + pJS.canvas.w / 5;
+        var seg5 = (pJS.canvas.w / 2) + pJS.canvas.w / 3;
+
+        
+
+        if (p1.x < seg1)
+          pJS.canvas.ctx.strokeStyle = 'rgba('+color1.r+','+color1.g+','+color1.b+','+opacity_line+')';
+        else if (p1.x > seg1 && p1.x < seg2)
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color2.r+','+color2.g+','+color2.b+','+opacity_line+')';
+        else if (p1.x > seg2 && p1.x < seg3)
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color3.r+','+color3.g+','+color3.b+','+opacity_line+')';
+        else if (p1.x > seg3 && p1.x < seg4)
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color4.r+','+color4.g+','+color4.b+','+opacity_line+')';
+        else if (p1.x > seg4 && p1.x < seg5)
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color5.r+','+color5.g+','+color5.b+','+opacity_line+')';
+        else 
+        pJS.canvas.ctx.strokeStyle = 'rgba('+color6.r+','+color6.g+','+color6.b+','+opacity_line+')';
+
+
+        
         pJS.canvas.ctx.lineWidth = pJS.particles.line_linked.width;
         //pJS.canvas.ctx.lineCap = 'round'; /* performance issue */
         
