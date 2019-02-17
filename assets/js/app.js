@@ -16,9 +16,9 @@ particlesJS('particles-js',
   {
     "particles": {
       "number": {
-        "value": 525,
+        "value": 300,
         "density": {
-          "enable": false,
+          "enable": true,
           "value_area": 800
         }
       },
@@ -41,12 +41,12 @@ particlesJS('particles-js',
         }
       },
       "opacity": {
-        "value": 0,
-        "random": true,
+        "value": 1,
+        "random": false,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 1,
-          "opacity_min": 1,
+          "opacity_min": .25,
           "sync": false
         }
       },
@@ -54,9 +54,9 @@ particlesJS('particles-js',
         "value": 0,
         "random": true,
         "anim": {
-          "enable": true,
+          "enable": false,
           "speed": 1,
-          "size_min": 1,
+          "size_min": 1.3,
           "sync": false
         }
       },
@@ -64,12 +64,12 @@ particlesJS('particles-js',
         "enable": true,
         "distance": 80,
         "color": "#007aff",
-        "opacity": .65,
-        "width": 0
+        "opacity": .4,
+        "width": 1
       },
       "move": {
         "enable": true,
-        "speed": 4.75
+        "speed": 4
         ,
         "direction": "right",
         "random": true,
@@ -111,10 +111,10 @@ particlesJS('particles-js',
         },
         "repulse": {
           "distance": 75,
-          "duration":0.4
+          "duration":1
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 6
         },
         "remove": {
           "particles_nb": 2

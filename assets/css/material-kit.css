@@ -51,9 +51,18 @@
 
 .responsive {
   width: 100%;
-  max-width: 225px;
+  max-width: 100px;
   height: auto;
   position: relative;
+  align-items: center;
+}
+responsive_cover
+.responsive_cover {
+
+  width: 20vh;
+  height: 20vh;
+  position: relative;
+  align-items: center;
 }
 
 .carousel.carousel-full-nagivation .left {
