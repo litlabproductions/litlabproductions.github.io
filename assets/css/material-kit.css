@@ -38,6 +38,23 @@
   background-color: rgba(25, 25, 25, 0.6);
 }
 
+.indent {
+  position: relative;
+  background-color: white;
+  height: 5vh;
+  min-height: 5vh;
+  width: 100%;
+  overflow: hidden;
+    opacity: 1;
+  z-index: 1;
+}
+
+.responsive {
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+  position: relative;
+}
 
 .carousel.carousel-full-nagivation .left {
   cursor: url("../../img/arrow-left.png"), url("../../img/arrow-left.cur"), default !important;
@@ -86,12 +103,12 @@ section {
 
 header {
   position: relative;
-  background-color: black;
-  height: 75vh;
-  min-height: 25rem;
+  background-color: white;
+  height: 25vh;
+  min-height: 25vh;
   width: 100%;
   overflow: hidden;
-    opacity: 0.5;
+    opacity: 1;
   z-index: 1;
 }
 
@@ -109,6 +126,7 @@ header video {
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
+
 
 header .container {
   position: relative;
@@ -16240,6 +16258,14 @@ footer {
   /* Safari */
   /* Safari 6.1+ */
   display: flex;
+  z-index: 2;
+
+  font-size: 85%;
+  color: rgb(0, 0, 0);
+  position: re;
+  bottom: 0;
+  color: rgb(0, 0, 0);
+  z-index: 2;
 }
 
 footer ul {
