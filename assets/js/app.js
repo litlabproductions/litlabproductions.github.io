@@ -125,7 +125,7 @@ particlesJS('particles-js',
     "config_demo": {
       "hide_card": false,
       "background_color": "#344E5C",
-      "background_image": "",
+      "background_image": "assets/img/65.png",
       "background_position": "50% 50%",
       "background_repeat": "no-repeat",
       "background_size": "cover"
