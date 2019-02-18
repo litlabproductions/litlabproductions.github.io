@@ -35,7 +35,7 @@
   border-style: solid;
   border-color: white;
   border-radius: 100px;
-  background-color: #000000;
+  background-color: white;
 }
 
 .indent {
@@ -156,9 +156,7 @@ header .overlay {
 }
 
 @media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
+
   header video {
     display: none;
   }
@@ -172,9 +170,6 @@ body {
   line-height: 1.5;
   color: #272829;
   text-align: left;
-
-  background-image: "assets/img/65.png";
-
 }
 
 [tabindex="-1"]:focus {
@@ -14342,6 +14337,7 @@ textarea {
   box-shadow: none;
   padding-top: 25px;
   color: rgb(0, 0, 0);
+  z-index: 2;
 }
 
 #navbar .navbar {
@@ -16211,7 +16207,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 
 .page-header>.container {
   position:relative;
-  z-index:9999;
+  z-index:1;
   color:#000000;
   font-size:32px;
   font-family: monospace, monospace;
