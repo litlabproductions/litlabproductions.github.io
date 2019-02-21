@@ -26,7 +26,7 @@
 
 
 #content {
-  height: auto;
+  height: 25em;
   width: 25em;
   border-style: solid;
   border-color: white;
@@ -99,7 +99,7 @@ figcaption,
 figure,
 footer
 {
-  z-index: 3;
+  z-index: 3 default !important;
 }
 header,
 hgroup,
@@ -11073,7 +11073,7 @@ a .material-icons {
 .main {
   background: #FFFFFF;
   position: relative;
-  z-index: 1;
+  z-index:  3 default !important;
 }
 
 .form-check,
@@ -11089,6 +11089,7 @@ label {
   border-radius: 20px;
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
   background-color: white;
+  z-index: 3 default !important;
 }
 
 /*           Animations              */
