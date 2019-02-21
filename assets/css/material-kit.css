@@ -16189,7 +16189,7 @@ fieldset[disabled] .form-group.is-focused .togglebutton label {
 .page-header {
   height: 100vh;
   background-position: center center;
-  background-size: 75% auto;
+  background-size: 20% relative;
   margin: 0;
   padding: 0;
   border: 0;
