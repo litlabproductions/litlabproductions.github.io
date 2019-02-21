@@ -148,7 +148,6 @@ header .overlay {
   width: 100%;
   background-color: black;
   opacity: 0.5;
-  z-index: 3;
 }
 
 @media (pointer: coarse) and (hover: none) {
@@ -166,7 +165,8 @@ body {
   line-height: 1.5;
   color: #272829;
   text-align: left;
-
+  background-color: white;
+  z-index: 3 !important;
 }
 
 [tabindex="-1"]:focus {

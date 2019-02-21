@@ -70,27 +70,3 @@ canvas{
 
 
 /* ---- particles.js container ---- */
-
-#particles-js {
-  top: 0px;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  background-color: #000000;
-  background-size: cover;
-  z-index: -1000;
-}
-
-
-#content {
-  height: auto;
-  width: 25em;
-  padding-top: 2em;
-  padding-bottom: 1em;
-  border-width: 2px;
-  border-style: solid;
-  border-color: white;
-  border-radius: 100px;
-  background-color: rgb(19, 18, 18);
-}
-
