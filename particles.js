@@ -703,7 +703,7 @@ var pJS = function(tag_id, params)
         var current_color;
         // New implementaion to color lines.
         
-        var seg1 = pJS.canvas.w / 5;
+        var seg1 = (pJS.canvas.w / 5) - 3.0;
         var seg2 = pJS.canvas.w / 3;
         var seg3 = pJS.canvas.w / 2;
         var seg4 = (pJS.canvas.w / 2) + pJS.canvas.w / 5;
