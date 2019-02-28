@@ -607,12 +607,12 @@ a:hover {
 }
 
 .intro .intro-video {
-  height: 100%;
-  left: 0;
-  object-fit: cover;
+  left: 50%;
+  min-height: 100%;
+  min-width: 100%;
   position: absolute;
-  top: 0;
-  width: 100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   z-index: -2;
 }
 
@@ -622,7 +622,7 @@ a:hover {
 }
 
 .intro .overlay-itro {
-  background-color: rgba(0, 0, 0, .93);
+  background-color: rgba(0, 0, 0, 0.70);
   position: absolute;
   top: 0;
   left: 0px;
