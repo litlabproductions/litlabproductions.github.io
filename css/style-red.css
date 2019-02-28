@@ -87,6 +87,8 @@ a:hover {
   -webkit-background-size: 1080px 720px;
   -moz-background-size: cover;
   background-size: cover;
+
+  background-attachment: scroll;
 }
 
 
