@@ -82,19 +82,13 @@ a:hover {
   overflow: hidden;
 }
 
-.bgimage {
-    width:100%;
-    height:500px;
-    background: url(../img/campfire.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:cover;
-    background-attachment: fixed;
-  }
-  .bgimage h5 {
-    color:white;
-    text-shadow:2px 2px #333;
-  }
+.bg-image {
+  background: url(../img/campfire2.jpg) no-repeat fixed center center transparent;
+  -webkit-background-size: 1080px 720px;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
 
 .overlay-mf {
   background-color: #be3131;
