@@ -83,11 +83,10 @@ a:hover {
 }
 
 .bg-image {
-  background: url(../img/campfire2.jpg) no-repeat fixed center center transparent;
+  background: url(../img/colors3.gif) no-repeat scroll center center transparent;
   -webkit-background-size: 1080px 720px;
   -moz-background-size: cover;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 
