@@ -83,11 +83,11 @@ a:hover {
 }
 
 .bg-image {
-  background: url(../img/campfire.jpg)  no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../img/campfire.jpg) no-repeat   center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .overlay-mf {
