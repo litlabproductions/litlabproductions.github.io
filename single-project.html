@@ -49,15 +49,17 @@
                     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                 <![endif]-->
 
+                <script src="js/iframe.js"></script>
+
 
                 <!-- Roost Imports -->
-            <link rel="shortcut icon" href="TemplateData/favicon.ico">
-            <link rel="stylesheet" href="TemplateData/style.css">
-            <script src="TemplateData/UnityProgress.js"></script>
-            <script src="Build/UnityLoader.js"></script>
-            <script>
-              var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BikeMenuFinal00.json", {onProgress: UnityProgress});
-            </script>
+                <link rel="shortcut icon" href="TemplateData/favicon.ico">
+                <link rel="stylesheet" href="TemplateData/style.css">
+                <script src="TemplateData/UnityProgress.js"></script>
+                <script src="Build/UnityLoader.js"></script>
+                <script>
+                  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BikeMenuFinal01.json", {onProgress: UnityProgress});
+                </script>
             <!-- End Roost Imports -->
 
     </head>
@@ -122,7 +124,17 @@
 
             <!-- Roost Game (WebGL 2.0) Engine  -->
             <div class="resp-container">
-                    <iframe class="resp-iframe" src="https://i.simmer.io/@LitLabProd/roosttest00"></iframe>
+                    <iframe class="resp-iframe" allowfullscreen>
+                            <div class="webgl-content">
+                                    <div id="unityContainer" style="width: 1920px; height: 1080px"></div>
+                                    <div class="footer">
+                                      <div class="webgl-logo"></div>
+                                      <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+                                      <div class="title">Roost</div>
+                                    </div>
+                                  </div>
+
+                    </iframe>
             </div>
 
             <!-- Spacing -->
@@ -132,6 +144,7 @@
         <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
             <h3 class="text-uppercase" style="color: #FFFFFF">Roost</h3>
             <h5>3D | Motocross Racing</h5>
+            <button onclick="makeFullScreen()">Make Full Screen</button>
             <div class="h-30"></div>
         </div>
 
