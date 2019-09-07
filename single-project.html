@@ -58,7 +58,7 @@
                 <script src="TemplateData/UnityProgress.js"></script>
                 <script src="Build/UnityLoader.js"></script>
                 <script>
-                  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BikeMenuFinal02.json", {onProgress: UnityProgress});
+                    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BikeMenuFinal02.json", {onProgress: UnityProgress});
                 </script>
             <!-- End Roost Imports -->
 
@@ -117,30 +117,25 @@
                 <!-- end nav -->
             </div>
     
-        <!-- main-container 
+        <!-- main-container -->
     <div class="container main-container-game-page">
         <div class="col-md-12">
             <br><br>
--->
+
             <!-- Roost Game (WebGL 2.0) Engine  -->
-       
-                    <div class="webgl-content">
-                      <div id="unityContainer" style="width: 1920px; height: 1080px"></div>
-                      <div class="footer">
-                        <div class="webgl-logo"></div>
-                        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-                        <div class="title">Roost</div>
-                      </div>
-                    </div>
-              
-            <!-- Spacing 
+            <div class="webgl-content">
+                    <div id="gameContainer" style="width: 1920px; height: 1080px"></div>
+                </div>
+                <div class="simmer">template by: <a href="https://simmer.io" target="_blank">SIMMER.io</a></div>
+                <script src="TemplateData/responsive.js"></script>
+            <!-- Spacing -->
         <div class="h-30"></div>
 
         <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
             <p>Alpha v.1.0 (Main Menu & Bike Color System)</p>
 
             <p>Based on the replication of 250cc/450cc dirtbike physics.</p>
-        </div>-->
+        </div>
  <!-- 
         <div class="col-md-3">
             <ul class="cat-ul">
