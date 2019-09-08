@@ -58,7 +58,7 @@
                 <script src="TemplateData/UnityProgress.js"></script>
                 <script src="Build/UnityLoader.js"></script>
                 <script>
-                    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/BikeMenuFinal02.json", {onProgress: UnityProgress});
+                  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/BikeMenuFinal01.json", {onProgress: UnityProgress});
                 </script>
             <!-- End Roost Imports -->
 
@@ -116,16 +116,29 @@
                 </nav>
                 <!-- end nav -->
             </div>
-
-            <!-- Roost Game (WebGL 2.0) Engine  -->
+    
         <!-- main-container -->
     <div class="container main-container-game-page">
         <div class="col-md-12">
             <br><br>
-            <iframe src="https://i.simmer.io/@LitLabProd/roosttest00" style="width:1920px;height:1080px;border:0"></iframe>
+
+            <!-- Roost Game (WebGL 2.0) Engine  -->
+            <div class="resp-container">
+
+
+                    <iframe class="resp-iframe" src="https://i.simmer.io/@LitLabProd/roosttest00" allowfullscreen></iframe>
+            </div>
 
             <!-- Spacing -->
         <div class="h-30"></div>
+
+            <!-- Roost Game Title & Description-->        
+        <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
+            <h3 class="text-uppercase" style="color: #FFFFFF">Roost</h3>
+            <h5>3D | Motocross Racing</h5>
+            <button onclick="makeFullScreen()">Make Full Screen</button>
+            <div class="h-30"></div>
+        </div>
 
         <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
             <p>Alpha v.1.0 (Main Menu & Bike Color System)</p>
