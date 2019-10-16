@@ -37,36 +37,80 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999
+    color: #999;
+    align-content: center;
 }
 
 .responsive {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
     width: 100%;
     max-width: 800px;
     height: auto;
+    align-content: center;
   }
 
   .resp-container {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
+    align-content: center;
 }
 
 .resp-iframe {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     border: 0;
+    align-content: center;
 }
 
+.responsive-dark {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    align-content: center;
+  }
+
+  .resp-container-dark {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    align-content: center;
+}
+
+.resp-iframe-dark {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    align-content: center;
+}
+
+
 iframe.fullScreen {
+    background: #1b1b1b !important;
+    background-color: #1b1b1b !important;
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    align-content: center;
 }
 
 .no-padding {
@@ -86,8 +130,8 @@ iframe.fullScreen {
 .main-container-game-page {
     padding: 100px 0;
     width: 100%;
-    background-color: #333;
-    background: #333;
+    background-color:  #1b1b1b !important;
+    background:  #1b1b1b !important;
 }
 
 .center {
@@ -339,7 +383,7 @@ h5 {
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked::before,
@@ -480,17 +524,20 @@ h5 {
     text-align: center;
     display: table;
     height: 100vh;
-    width: 95%;
+    width: 100%;
+    text-align: center;
 }
 
 .box-intro .table-cell {
     display: table-cell;
     vertical-align: middle;
+    text-align: center;
 }
 
 .box-intro em {
     font-style: normal;
-    text-transform: uppercase
+    text-transform: uppercase;
+    text-align: center;
 }
 
 b i:last-child {
@@ -498,10 +545,11 @@ b i:last-child {
 }
 
 .box-intro h5 {
-    letter-spacing: 2px;
+    letter-spacing: 6px;
     text-transform: uppercase;
     color: #999;
     line-height: 1.7;
+    text-align: center;
 }
 
 
