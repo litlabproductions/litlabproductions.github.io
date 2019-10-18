@@ -8,6 +8,7 @@ function requestFullScreen(element) {
         var wscript = new ActiveXObject("WScript.Shell");
         if (wscript !== null) {
             wscript.SendKeys("{F11}");
+        
         }
     }
 }
