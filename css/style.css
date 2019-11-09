@@ -174,7 +174,7 @@ h3 {
 }
 
 h5 {
-    color: #ffaa00;
+    color: #FFBF00;
 }
 
 
@@ -463,7 +463,7 @@ h5 {
 
 .box-primary-nav a {
     display: inline-block;
-    padding: .4em 1em;
+    padding: 0 .6em;
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
@@ -485,7 +485,7 @@ h5 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 17px;
-    margin: 2.4em 0 .8em;
+    margin: 2.4em 0 .2em;
 }
 
 .box-primary-nav .box-social {
