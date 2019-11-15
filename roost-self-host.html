@@ -38,9 +38,6 @@
     <!-- Modernizr Import -->
     <script src="js/modernizr.js"></script>
 
-    <!-- iFrame Import -->
-    <script src="js/iframe.js"></script>
-
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
@@ -52,20 +49,19 @@
                     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
                     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                 <![endif]-->
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Roost.json", {
+            onProgress: UnityProgress
+        });
+    </script>
 
-    <!-- Self Hosting 
-        -> No longer needed.
-        -> Fallback is its own page, @ '/roost-self-host'-->
-    <!--
-                <link rel="stylesheet" href="TemplateData/style.css">
-                <script src="TemplateData/UnityProgress.js"></script>
-                <script src="Build/UnityLoader.js"></script>
-                <script>
-                    var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Roost.json", {
-                        onProgress: UnityProgress
-                    });
-                </script>
-            -->
+
+
+    <script src="js/iframe.js"></script>
 </head>
 
 <body style="background: #1b1b1b;" style="background-color: #1b1b1b;">
@@ -132,7 +128,17 @@
 
         <!-- Roost Game (WebGL 2.0) Engine  -->
         <div class="resp-container">
-            <iframe allowtransparency="true" style="background: #1b1b1b;" class="resp-iframe" style="background-color: #1b1b1b;" src="https://mygame.page/roost" allowfullscreen></iframe>
+            <div id="unityContainer" style="width: 1080px; height: 608px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(255, 255, 255);">
+                <canvas id="#canvas" style="width: 100%; height: 100%; cursor: default;" width="1080" height="608"></canvas>
+                <div class="logo Light" style="display: none;"></div>
+                <div class="progress Light" style="display: none;">
+                    <div class="empty" style="width: 0%;"></div>
+                    <div class="full" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="webgl-logo"></div>
+            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+            <div class="title">Roost</div>
         </div>
 
     </div>
