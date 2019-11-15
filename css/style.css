@@ -42,15 +42,13 @@ body {
 }
 
 .responsive {
-
     width: 100%;
     max-width: 800px;
     height: auto;
     align-content: center;
-  }
+}
 
-  .resp-container {
-
+.resp-container {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
@@ -63,7 +61,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90vw;
     height: 100%;
     border: 0;
     align-content: center;
@@ -76,9 +74,9 @@ body {
     max-width: 800px;
     height: auto;
     align-content: center;
-  }
+}
 
-  .resp-container-dark {
+.resp-container-dark {
     background: #1b1b1b !important;
     background-color: #1b1b1b !important;
     position: relative;
@@ -98,7 +96,6 @@ body {
     border: 0;
     align-content: center;
 }
-
 
 iframe.fullScreen {
     background: #1b1b1b !important;
@@ -127,17 +124,16 @@ iframe.fullScreen {
 }
 
 .main-container-game-page {
-    padding: 90px 0;
-    width: 75%;
-    background-color:  #1b1b1b !important;
-    background:  #1b1b1b !important;
+    width: 90vw;
+    background-color: #1b1b1b !important;
+    background: #1b1b1b !important;
 }
 
 .main-container-docs-page {
     padding: 90px 0;
     width: 100%;
-    background-color:  #1b1b1b !important;
-    background:  #1b1b1b !important;
+    background-color: #1b1b1b !important;
+    background: #1b1b1b !important;
 }
 
 .center {
@@ -344,10 +340,12 @@ h5 {
     font-weight: 700;
     display: none;
 }
-   
-    /* 
+
+
+/* 
         White page Background.
     */
+
 .box-primary-nav-trigger .box-menu-icon {
     display: inline-block;
     position: absolute;
@@ -478,6 +476,7 @@ h5 {
     text-decoration: none;
     font-weight: bold;
 }
+
 .box-primary-nav a:focus {
     outline: none;
 }
@@ -521,8 +520,6 @@ h5 {
 }
 
 
-
-
 /* box-intro
 ==================================================*/
 
@@ -532,7 +529,6 @@ h5 {
     height: 100vh;
     width: 100%;
     text-align: center;
-
     position: relative;
     overflow: hidden;
     align-content: center;
@@ -636,8 +632,6 @@ b i:last-child {
         transform: translateY(20px);
     }
 }
-
-
 
 .box-headline {
     font-size: 4vw;
@@ -1102,7 +1096,7 @@ footer img {
     resize: none;
 }
 
-.textarea-contact > span {
+.textarea-contact>span {
     position: absolute;
     top: 20px;
     left: 20px;
@@ -1137,7 +1131,7 @@ footer img {
     color: #9a9a9a;
 }
 
-.input-contact > span {
+.input-contact>span {
     position: absolute;
     top: 50%;
     left: 20px;
@@ -1151,8 +1145,8 @@ footer img {
     z-index: 1;
 }
 
-.input-contact > span.active,
-.textarea-contact > span.active {
+.input-contact>span.active,
+.textarea-contact>span.active {
     color: #ffaa00;
     font-size: 10px;
     top: 0px;
@@ -1289,4 +1283,3 @@ textarea:focus {
         line-height: 30px;
     }
 }
-
