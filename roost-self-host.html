@@ -127,44 +127,38 @@
     <div class="container main-container-game-page" style="background-color: #1b1b1b; background: #1b1b1b;">
 
         <!-- Roost Game (WebGL 2.0) Engine  -->
-        <div class="resp-container">
-            <div id="unityContainer" style="width: 1080px; height: 608px; padding: 0px; margin: 0px; border: 0px; position: relative; background: rgb(255, 255, 255);">
-                <canvas id="#canvas" style="width: 100%; height: 100%; cursor: default;" width="1080" height="608"></canvas>
-                <div class="logo Light" style="display: none;"></div>
-                <div class="progress Light" style="display: none;">
-                    <div class="empty" style="width: 0%;"></div>
-                    <div class="full" style="width: 100%;"></div>
-                </div>
+        <!-- main-container -->
+        <div class="container main-container-game-page" style="background-color: #1b1b1b; background: #1b1b1b;">
+
+            <!-- Roost Game (WebGL 2.0) Engine  -->
+            <div class="resp-container">
+                <iframe allowtransparency="true" style="background: #1b1b1b;background-color: #1b1b1b;" class="resp-iframe" src="/roost-raw" allowfullscreen></iframe>
+
+
             </div>
-            <div class="webgl-logo"></div>
-            <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-            <div class="title">Roost</div>
+            <p style="color: #FFBF00;font-weight: 150em;">Problems loading or slow? Try the self-hosted version <a class="h5" style="color: #FFBF00;font-weight: 400em;" href="/roost-self-host">here.</a></p>
         </div>
-    </div>
-    <p style="color: #FFBF00;font-weight: 150em;">Problems loading or slow? Try the Simmer.io version <a class="h5" style="color: #FFBF00;font-weight: 400em;" href="/roost">here.</a></p>
-    </div>
-    </div>
-    <!-- Spacing -->
-    <div class="h-30"></div>
+        <!-- Spacing -->
+        <div class="h-30"></div>
 
-    <!-- Roost Game Title & Description-->
-    <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
-        <h3 class="text-uppercase" style="color: #FFFFFF">Roost</h3>
-        <h5>3D | MX Racing</h5>
+        <!-- Roost Game Title & Description-->
+        <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
+            <h3 class="text-uppercase" style="color: #FFFFFF">Roost</h3>
+            <h5>3D | MX Racing</h5>
 
-        <br>
-        <h5 class="text-uppercase" style="color: rgb(255, 0, 0)">Warning:</h5>
-        <h5 class="text-uppercase" style="color: rgb(206, 206, 206)"> Use ESC --> Back Button<br> To Return from Fullscreen Temporarily</h3>
+            <br>
+            <h5 class="text-uppercase" style="color: rgb(255, 0, 0)">Warning:</h5>
+            <h5 class="text-uppercase" style="color: rgb(206, 206, 206)"> Use ESC --> Back Button<br> To Return from Fullscreen Temporarily</h5>
             <button style="background: #ffffff00;" style="color: rgb(255, 0, 0)" onclick="makeFullScreen()">Make Full Screen</button>
 
             <div class="h-30"></div>
-    </div>
+        </div>
 
-    <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
-        <p>Alpha v.1.0<br> Main Menu, Color System & Mirage!</p>
+        <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
+            <p>Alpha v.1.0<br> Main Menu, Color System & Mirage!</p>
 
-        <p>Based on the replication of 250cc/450cc dirtbike physics.</p>
-    </div>
+            <p>Based on the replication of 250cc/450cc dirtbike physics.</p>
+        </div>
     </div>
     </div>
     <!-- end main-container -->
