@@ -1,58 +1,35 @@
-<!--****************************************************************
-    Document Details:
-
-        Author: David Guido
-        Organization: Lit Lab Productions
-        Website: www.litlabproductions.com
-
-        File Name: portfolio.html
-        Date of Creation: 9/8/2019
-********************************************************************-->
-
-<!-- Filetype / Language Declaration -->
 <!DOCTYPE html>
 <html lang="en">
-
-
-<!-- Head Section -->
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Keep the above 3 meta tags.
-                 They must come first in the head. 
-                 Any other head content must come after these tags. -->
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Box personal portfolio Template</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
 
-    <!-- Title / Website Tab Icon -->
-    <title> @LLP / Portfolio </title>
-    <link rel="icon" href="img/WebTabIcon03.png" type="image/x-icon">
-
-    <!-- Bootstrap Import -->
+    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="ionicons/css/ionicons.min.css" rel="stylesheet">
 
-    <!-- Main CSS Import -->
+    <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Modernizr Import -->
+
+    <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
-
-    <!-- Internet Explorer Fallback: -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-                    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-                    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-                <![endif]-->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
-
-
-<!-- Body Section -->
 
 <body>
 
@@ -66,17 +43,18 @@
         </div>
     </div>
     <!-- (End) Loading Animation Preloader -->
-    <div class="container-fluid">
 
+    <div class="container-fluid">
         <!-- LLP Header  -->
         <header class="box-header">
-            <div class="box-logo">
+
+            <div class="box-logo-dark">
                 <a href="index.html"><img src="img/Nav01.png" width="150" alt="Logo"></a>
             </div>
 
             <!-- Right Side Navigation -->
             <a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text"></span><span class="box-menu-icon"></span>
+                <span class="box-menu-icon"></span>
             </a>
         </header>
         <!-- End LLP header -->
@@ -87,13 +65,13 @@
 
                 <li><a href="index.html">Home</a></li>
 
-                <li><a href="portfolio.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Portfolio</a><i class="flaticon-check" style="color: #FFFFFF"></i></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="brandcolors.html">Brand Colors</a></li>
                 <li><a href="overtier.html">Overtier</a></li>
 
                 <li class="box-label">Playable</li>
 
-                <li><a href="roost.html">Roost</a></li>
+                <li><a href="roost.html">&nbsp;&nbsp;&nbsp;&nbsp;Roost</a><i class="flaticon-check" style="color: #FFFFFF"></i></li>
                 <li><a href="#">Polygonic Crusade</a></li>
                 <li><a href="maze.html">MAZE</a></li>
 
@@ -112,15 +90,23 @@
         </nav>
     </div>
 
+
+
     <!-- main container -->
     <div class="main-container portfolio-inner clearfix">
         <!-- portfolio div -->
+        <!-- top bar -->
+        <div class="top-bar" style="max-height: 200px">
+            <h2 style="font-family: Verdana, Geneva, Tahoma, sans-serif;text-shadow: 1px 1px #1f1f1f63;font-size: xx-large;color: #1b1b1b;"><span style="letter-spacing: .2em;color:#E6733A">Lit<span style="color: #E6733A;"><span style="letter-spacing: -0.1em;"> </span>Lab<span style="color:#1b1b1b;letter-spacing: 0.05em;"><span style="letter-spacing: -0.1em;"> </span>Portfolio</span>
+                </span>
+                </span><span style="letter-spacing: 0em;"></span></h2>
+        </div>
+        <!-- end top bar -->
         <div class="portfolio-div">
             <div class="portfolio">
                 <!-- portfolio_filter -->
                 <div class="categories-grid wow fadeInLeft">
                     <nav class="categories text-center">
-                        <br><br/>
                         <ul class="portfolio_filter">
                             <li><a href="" class="active" data-filter="*">All</a></li>
                             <li><a href="" data-filter=".playable">Web Playable</a></li>
@@ -134,11 +120,28 @@
                 <!-- portfolio_filter -->
 
                 <!-- portfolio_container -->
-                <div class="no-padding portfolio_container clearfix">
+                <div class="no-padding portfolio_container clearfix" style="background: #1b1b1b">
+
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-6 playable 2d">
+                    <div class="col-md-4 col-sm-12 playable 3d">
+                        <a href="roost.html" class="portfolio_item">
+                            <img src="images/roost-portfolio.png" style="height: 100%;width: 100%;" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Roost</span>
+                                        <em>MX Racer | 3rd Person</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 playable 2d">
                         <a href="maze.html" class="portfolio_item">
-                            <img src="images/MazeIcon02.png" alt="image" class="img-responsive" />
+                            <img src="images/maze-portfolio.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -152,9 +155,26 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-3 col-sm-6 app">
+                    <div class="col-md-4 col-sm-6 playable 3d">
+                        <a href="" class="portfolio_item">
+                            <img src="images/polygonic-portfolio.png" alt="image" class="img-responsive" />
+                            <div class="portfolio_item_hover">
+                                <div class="portfolio-border clearfix">
+                                    <div class="item_info">
+                                        <span>Polygonic Crusade</span>
+                                        <span>(Coming Soon)</span>
+                                        <em>RTS | Top Down</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single work -->
+
+                    <!-- single work -->
+                    <div class="col-md-4 col-sm-6 app">
                         <a href="overtier.html" class="portfolio_item">
-                            <img src="images/OvertierCard00.png" alt="image" class="img-responsive" />
+                            <img src="images/overtier-portfolio.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -171,44 +191,9 @@
                     <!-- end single work -->
 
                     <!-- single work -->
-                    <div class="col-md-6 col-sm-12 playable 3d">
-                        <a href="roost.html" class="portfolio_item">
-                            <img src="images/RoostCardBG05.png" alt="image" class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Roost</span>
-                                        <em>MX Racer | 3rd Person</em>
-                                        <span style="font-size: 1em; color: #fffff4;"><br>Alpha v.1.0<br></span>
-                                        <span style="font-size: .8em; color: #FFBF00;">Main Menu, Color System<br>& Mirage!</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-                    <!-- single work -->
-                    <div class="col-md-6 col-sm-12 playable 3d">
-                        <a class="portfolio_item">
-                            <img src="images/PolygonicCardBG01.png" alt="image" class="img-responsive" />
-                            <div class="portfolio_item_hover">
-                                <div class="portfolio-border clearfix">
-                                    <div class="item_info">
-                                        <span>Polygonic Crusade</span>
-                                        <span>(Coming Soon)</span>
-                                        <em>RTS | Top Down</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!-- end single work -->
-
-
-                    <!-- single work -->
-                    <div class="col-md-6 col-sm-12 asset">
-                        <a class="portfolio_item">
-                            <img src="images/DPSCard04.png" alt="image" class="img-responsive" />
+                    <div class="col-md-4 col-sm-6 asset">
+                        <a href="" class="portfolio_item">
+                            <img src="images/dps-portfolio.png" alt="image" class="img-responsive" />
                             <div class="portfolio_item_hover">
                                 <div class="portfolio-border clearfix">
                                     <div class="item_info">
@@ -257,25 +242,3 @@
 
     <!--  custom script -->
     <script src="js/custom.js"></script>
-
-    <!-- google analytics  -->
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-        ga('create', 'UA-76796224-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-
-</body>
-
-</html>
