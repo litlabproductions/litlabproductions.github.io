@@ -37,7 +37,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: #999;
+    color: rgb(182, 182, 182);
     align-content: center;
     background: #121212;
 }
@@ -197,8 +197,18 @@ h1 {
     text-transform: uppercase;
 }
 
+h2 {
+    color: #fafafa;
+    letter-spacing: .1em;
+    text-transform: none;
+}
+
 h3 {
-    color: #393939;
+    color: rgb(182, 182, 182);
+}
+
+h4 {
+    line-height: 1.5em;
 }
 
 h5 {

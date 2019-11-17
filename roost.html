@@ -20,13 +20,6 @@
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
-    <script>
-        function resizeIframe(obj) {
-            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
-            obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
-
-        }
-    </script>
 
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -35,6 +28,10 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome JS-->
+    <script defer src="fontawesome/js/all.min.js"></script>
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -110,38 +107,80 @@
     </div>
     <!-- main-container -->
     <div class="container main-container">
-
-
-
-
         <div class="col-md-12">
-            <h3 class="text-uppercase">project title</h3>
-            <h5>Creative & Lorem ipsum dolor sit amet</h5>
+            <br><br><br>
+            <div class="col-md-6">
+                <img src="images/RoostLogo01.png" alt="img/SiteLogoAnimFallback00.png" class="responsive img-responsive" style="width: 75%;height: 100%;"><br>
+            </div>
+            <div class="col-md-6" style="padding-top: 4%;padding-right: 15%;">
+                <h3 style="line-height:1.5em"><i>A motocross game based on 250cc dirt bike physics</i></h3>
+            </div>
             <div class="h-30"></div>
         </div>
 
-        <div class="col-md-9">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo
-                nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia-, bene laudata virtus voluptatis aditus ultimum cum ultimo sapientiae Et nemo nimium beatus est </p>
+        <div class="col-md-6">
+            <div class="col-md-6">
+                <h4 style="color:#FFBF00;">Controls</h4>
+                <h6 style="font-size:larger;padding-left: 2%;">Accelerate&nbsp;&nbsp;|&nbsp;&nbsp;W</h6>
+                <h6 style="font-size:larger;padding-left: 2%;">Pull Left&nbsp;&nbsp;|&nbsp;&nbsp;A</h6>
+                <h6 style="font-size:larger;padding-left: 2%;">Pull Back&nbsp;&nbsp;|&nbsp;&nbsp;Down</h6>
+                <h6 style="font-size:larger;padding-left: 2%;">Shift Down&nbsp;&nbsp;|&nbsp;&nbsp;N</h6>
+                <h6 style="font-size:larger;padding-left: 2%;">Game Menu&nbsp;&nbsp;|&nbsp;&nbsp;Esc</h6>
+            </div>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliter enim nosmet ipsos nosse non possumus. Inscite autem medicinae et gubernationis ultimum cum ultimo sapientiae comparatur. Tecum optime, deinde etiam cum mediocri amico. Et nemo
-                nimium beatus est; Ac ne plura complectar-sunt enim innumerabilia </p>
+            <div class="col-md-6">
+                <h4 style="color:#FFBF00;"><br></h4>
+                <h6 style="font-size:larger;padding-right: 2%;">Brake&nbsp;&nbsp;|&nbsp;&nbsp;S</h6>
+                <h6 style="font-size:larger;padding-right: 2%;">Pull Right&nbsp;&nbsp;|&nbsp;&nbsp;D</h6>
+                <h6 style="font-size:larger;padding-right: 2%;">Push Forward&nbsp;&nbsp;|&nbsp;&nbsp;Up</h6>
+                <h6 style="font-size:larger;padding-right: 2%;">Shift Up&nbsp;&nbsp;|&nbsp;&nbsp;M</p>
+                    <h6 style="font-size:larger;padding-right: 2%;">Respawn&nbsp;&nbsp;|&nbsp;&nbsp;R</h6>
+            </div>
+            <div class="col-md-12" style="padding-top: 4%;">
+                <h4 style="color:#FFBF00;">Physics-Based System | Built with
+                    <a style="color:#FFBF00;"><i>D.P.S</i></a></h4>
+                <div style="padding-left:2%;padding-right: 2%; ">
+                    <p>Fully responsive, dynamic suspension system defined by over 20 parameters</p>
+                    <p>Custom rigged bike. A single 3D model split into an 18-piece hierarchy of game objects. Pivoting mocks realistic movement by worldly standards.</p>
+                </div>
+            </div>
+            <div class="col-md-12" style="padding-top: 4%;" ">
+                <h4 style="color:#FFBF00;padding:1%; ">Fully Rigged MX-Rider Model, Animations using I.K</h4>
+                <div style="padding-left:2%;padding-right: 2%; ">
+                    <p>64-Bone character rigging allows animations to seamlessly flow from the main menu to the game scene</p>
+                </div>
+            </div>
+            <div class="col-md-12 " style="padding-top: 4%; "">
+                <h4 style="color:#FFBF00;padding:1%;">Post-Processing V2</h4>
+                <div style="padding-left:2%;padding-right: 2%; ">
+                    <p>Combines complete set of rendered effects into a single pipeline</p>
+                </div>
+            </div>
+
         </div>
 
-        <div class="col-md-3">
-            <ul class="cat-ul">
-                <li><i class="ion-ios-circle-filled"></i> Design</li>
-                <li><i class="ion-ios-circle-filled"></i> consectetur adipiscing</li>
-                <li><i class="ion-ios-circle-filled"></i> et gubernationis</li>
-                <li><i class="ion-ios-circle-filled"></i> Aliter enim nosmet</li>
+        <div class="col-md-3 ">
+            <ul class="cat-ul ">
+                <li>
+                    <h4 style="color:#FFBF00 "><br>Documentation</h4>
+                </li>
+                <li><i class="fas fa-drafting-compass "></i>&nbsp;&nbsp;<a style="color: #fafafa; ">Design</a>
+                </li>
+                <li>&nbsp;<i class="fas fa-file-code "></i>&nbsp;&nbsp;<a style="color: #fafafa; ">Development</a></li>
+                <li>
+                    <li><i class="fab fa-github "></i>&nbsp;&nbsp;<a style="color: #fafafa; ">Source</a></li>
+                    <h4 style="color:#FFBF00 "><br>Find an error or have a comment?</h4>
+                </li>
+                <li><i class="fas fa-bug "></i>&nbsp;&nbsp;<a style="color: #fafafa; ">Submit a bug report</a></li>
+                <li><i class="fas fa-envelope "></i>&nbsp;&nbsp;<a style="color: #fafafa; ">Send me a message</a></li>
             </ul>
-            <div class="h-10"></div>
-            <h4>Share</h4>
-            <ul class="social-ul">
-                <li class="box-social"><a href="#0"><i class="ion-social-facebook"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-instagram-outline"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-twitter"></i></a></li>
-                <li class="box-social"><a href="#0"><i class="ion-social-dribbble"></i></a></li>
+            <div class="h-10 "></div>
+            <h4 style="color:#FFBF00 ">Share</h4>
+            <ul class="social-ul ">
+                <li class="box-social "><a href="#0 "><i class="fab fa-facebook-f "></i></a></li>
+                <li class="box-social "><a href="#0 "><i class="fab fa-instagram "></i></a></li>
+                <li class="box-social "><a href="#0 "><i class="fab fa-twitter "></i></a></li>
+                <li class="box-social "><a href="#0 "><i class="fab fa-dribbble "></i></a></li>
             </ul>
         </div>
     </div>
@@ -150,7 +189,7 @@
 
     <!-- footer -->
     <footer>
-        <div class="container-fluid">
+        <div class="container-fluid ">
             <p style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC ">Made in <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color: #FFBF00;font-weight:
                     400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></p>
             <p style="font-family: Poppins, sans-serif;line-height: 1.3em; "><span>©2019</span> <span style="font-size: large;color: #f2893D;font-weight: 400;letter-spacing: 0.025em; ">Lit Lab Productions</span><br><span style=" ">All Rights Reserved</span></p>
@@ -167,16 +206,16 @@
 
 
     <!-- jQuery -->
-    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/jquery-2.1.1.js "></script>
     <!--  plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/animated-headline.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/menu.js "></script>
+    <script src="js/animated-headline.js "></script>
+    <script src="js/isotope.pkgd.min.js "></script>
 
 
     <!--  custom script -->
-    <script src="js/custom.js"></script>
+    <script src="js/custom.js "></script>
 
 </body>
 
