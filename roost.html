@@ -20,6 +20,14 @@
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
+    <script>
+        function resizeIframe(obj) {
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+            obj.style.width = obj.contentWindow.document.body.scrollWidth + 'px';
+
+        }
+    </script>
+
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
@@ -95,13 +103,16 @@
         </nav>
         <!-- end nav -->
     </div>
+    <div style="position:relative;padding-top:56.25%; ">
 
+        <iframe src="/roost-raw " frameborder="0 " allowfullscreen style="position:absolute;top:100px;left:0;width:100%;height:100%; "></iframe>
+
+    </div>
     <!-- main-container -->
     <div class="container main-container">
-        <div class="col-md-12">
-            <iframe src="/roost-raw " frameborder="0 " allowfullscreen style="top:100px;left:0;width:100%;height:100%; "></iframe>
-            <div class="h-30"></div>
-        </div>
+
+
+
 
         <div class="col-md-12">
             <h3 class="text-uppercase">project title</h3>
