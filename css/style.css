@@ -39,7 +39,21 @@ body {
     line-height: 1.8;
     color: #999;
     align-content: center;
-    background: #1b1b1b;
+    background: #121212;
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #1b1b1b;
+    background-clip: border-box;
+    border: 1px solid #2a2a2a;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .responsive {
@@ -57,26 +71,27 @@ body {
     align-content: center;
     width: 100%;
     height: 100%;
-    border-radius: 7px;
-    background: #1b1b1b !important;
+    border: 2px solid black;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -o-border-radius: 20px;
+    overflow: hidden;
+    background: #ffffff !important;
 }
 
 .resp-iframe {
-    background: #1b1b1b !important;
-    background-color: #1b1b1b !important;
+    background: #121212 !important;
+    background-color: #121212 !important;
     position: absolute;
     top: 70px;
     left: 0;
     width: 100%;
-    border: 0;
     align-content: center;
-    border-radius: 7px;
-    box-shadow: 10px 10px 10px 10px rgba(221, 219, 219, 0.918);
 }
 
 .responsive-dark {
-    background: #1b1b1b !important;
-    background-color: #1b1b1b !important;
+    background: #121212 !important;
+    background-color: #121212 !important;
     width: 100%;
     max-width: 800px;
     height: auto;
@@ -84,8 +99,8 @@ body {
 }
 
 .resp-container-dark {
-    background: #1b1b1b !important;
-    background-color: #1b1b1b !important;
+    background: #1a2035 !important;
+    background-color: #1a2035 !important;
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
@@ -93,8 +108,8 @@ body {
 }
 
 .resp-iframe-dark {
-    background: #1b1b1b !important;
-    background-color: #1b1b1b !important;
+    background: #121212 !important;
+    background-color: #121212 !important;
     position: absolute;
     left: 0;
     width: 100%;
@@ -104,8 +119,8 @@ body {
 }
 
 iframe.fullScreen {
-    background: #1b1b1b !important;
-    background-color: #1b1b1b !important;
+    background: #121212 !important;
+    background-color: #121212 !important;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -135,15 +150,15 @@ iframe.fullScreen {
     align-content: center;
     align-items: center;
     align-self: center;
-    background-color: #1b1b1b !important;
-    background: #1b1b1b !important;
+    background-color: #121212 !important;
+    background: #121212 !important;
 }
 
 .main-container-docs-page {
     padding: 90px 0;
     width: 100%;
-    background-color: #1b1b1b !important;
-    background: #1b1b1b !important;
+    background-color: #121212 !important;
+    background: #121212 !important;
 }
 
 .center {
