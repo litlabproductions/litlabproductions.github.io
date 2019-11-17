@@ -8,6 +8,29 @@
         File Name: single-project.html
         Date of Creation: 9/8/2019
 ********************************************************************-->
+<!--****************************************************************
+    Document Details:
+
+        Author: David Guido
+        Organization: Lit Lab Productions
+        Website: www.litlabproductions.com
+
+        File Name: single-project.html
+        Date of Creation: 9/8/2019
+********************************************************************-->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <!-- Filetype / Language Declaration -->
 <!DOCTYPE html>
@@ -42,6 +65,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" type="text/css" href="css/flaticon.css">
 
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
+
+
     <!-- Internet Explorer Fallback: -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,12 +78,13 @@
                     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
                 <![endif]-->
 
+
+
     <script src="js/iframe.js"></script>
-
-
 </head>
 
-<body>
+<body style="background: #1b1b1b;" style="background-color: #1b1b1b;">
+
     <!-- Loading Animation Preloader -->
     <div id="preloader">
         <div class="pre-container">
@@ -66,7 +95,7 @@
         </div>
     </div>
     <!-- (End) Loading Animation Preloader -->
-    <div class="container-fluid" style="background: #333333">
+    <div class="container-fluid" style="background: #1b1b1b">
 
         <!-- LLP Header  -->
         <header class="box-header">
@@ -95,9 +124,9 @@
 
                 <li class="box-label">Playable</li>
 
-                <li><a href="roost.html">Roost</a></li>
+                <li><a href="roost.html">&nbsp;&nbsp;&nbsp;&nbsp;Roost</a><i class="flaticon-check" style="color: #FFFFFF"></i></li>
                 <li><a href="#">Polygonic Crusade</a></li>
-                <li><a href="maze.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MAZE</a><i class="flaticon-check" style="color: #FFFFFF"></i></li>
+                <li><a href="maze.html">MAZE</a></li>
 
                 <li class="box-label">Asset</li>
 
@@ -112,79 +141,109 @@
                 <li class="box-social"><a href="#0"><i class="flaticon-reddit"></i></a></li>
             </ul>
         </nav>
-        <!-- end nav -->
     </div>
 
     <!-- main-container -->
-    <div class="container main-container-game-page">
-        <div class="col-md-12" align="center" style="align-content: center;align-items: center;">
+    <div class="container main-container-game-page" style="background: #1b1b1b;">
 
-            <!-- MAZE Game (WebGL 2 .0) Engine  -->
-            <iframe align="center" style="width:608px;height:1080px;border:0" src="https://i.simmer.io/@LitLabProd/maze" allowfullscreen></iframe>
-        </div>
+        <!-- Roost Game (WebGL 2.0) Engine  -->
+        <!-- main-container -->
 
-        <!-- Spacing -->
-        <div class="h-30"></div>
+        <!-- Roost Game (WebGL 2.0) Engine  -->
+        <div style="position:relative;padding-top:56.25%;width: 100vw;">
 
-        <!-- Roost Game Title & Description-->
-        <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
-            <h3 class="text-uppercase" style="color: #FFFFFF">MAZE</h3>
-            <h5>2D | Casual</h5>
-            <button onclick="makeFullScreen()">Make Full Screen</button>
-            <div class="h-30"></div>
-        </div>
-
-        <div class="col-md-12" style="padding-left: 30px" style="padding-right: 30px">
-            <p>v.1.0</p>
+            <iframe src="https://i.simmer.io/@LitLabProd/maze?hasMonetization=1" allowfullscreen style="border: 5px #1b1b1b;position:absolute;top:100px;left:0;width:405px;height:720px;"></iframe>
         </div>
 
     </div>
-    <!-- end main-container -->
 
-    <!-- end main-container -->
-    <!-- Footer -->
-    <footer>
-        <div class="container-fluid">
-            <p>Made with<span class="flaticon-pyromania"></span> by David Guido
-                <br>©2019 Lit Lab Productions
-                <br>All Rights Reserved</p>
+    <!-- end Overtier Card -->
+
+    <!-- Roost Game Title & Description-->
+    <div class="col-md-12">
+        <!-- Overtier Card -->
+        <div class="col-md-6 col-sm-6" style="padding-left: 20%;">
+            <img src="images/MazeIcon02.png" alt="img/SiteLogoAnimFallback00.png" class="responsive img-responsive" style="border-radius: 15%;width: 75%;height: 75%;"><br>
         </div>
-    </footer>
-    <!-- end Footer -->
-    <!-- Back-to-Top Button -->
-    <a href="#0" class="cd-top">
-        <i class="flaticon-miscellaneous"></i></a>
-    <!-- end Back-to-Top Button -->
-    <!-- jQuery -->
-    <script src="js/jquery-2.1.1.js"></script>
-    <!--  plugins -->
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/menu.js"></script>
-    <script src="js/animated-headline.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
+        <!-- end Overtier Card -->
+
+        <!-- Overtier Card -->
+        <div class="col-md-6 col-sm-6" style="align-content: flex-start;padding-right: 15%;padding-top: 4%;">
+            <i><h4 style="vertical-align: bottom;text-align: center;align-self: center;"><span style="color: #dfdfdf;font-weight: 400em;"><br><br>Dash between a MAZE of obstacles</span></h4></i><br>
+            <h3 style="vertical-align: bottom;text-align: center;align-self: center;"><a style="color: #FFBF00;font-weight: 400em; " href="/roost-raw">Documentation</a></h3>
+        </div>
 
 
-    <!--  custom script -->
-    <script src="js/custom.js"></script>
+        <div class="col-md-6 col-sm-6" style="align-content: flex-start;padding-top: 5%;padding-right: 15%;">
+            <h4 style="vertical-align: bottom;text-align: center;align-self: center;"><a style="color: rgba(41, 171, 204, 0.81);font-weight: 400em; " href="/roost-raw ">Report a Bug</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a style="color: rgba(41, 171, 204, 0.81);font-weight: 400em; " href="/roost-raw ">Leave a Comment</a> </h4>
+        </div>
+    </div>
 
-    <!-- google analytics  -->
-    <script>
-        (function(i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function() {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    <div class="col-md-12">
+        <!-- Overtier Card -->
+        <div class="col-md-6 col-sm-6" style="padding-left: 20%;">
+            <h2 style="padding-bottom: 1%;color: #F2893D;"><br>Alternative Play Options<span style="color: rgb(184, 184, 184);">:</span></h2>
+            <!--  <h3 style="color: #29ABCC;font-weight: 150em; ">&nbsp;&nbsp;&nbsp;&nbsp;1<span style="color: rgb(184, 184, 184);">.</span>&nbsp;&nbsp;&nbsp;<a style="color: #FFBF00;font-weight: 400em; " href="/roost-raw ">Fullscreen Raw</h3></a>
+                <h3 style="color: #29ABCC;font-weight: 150em; ">&nbsp;&nbsp;&nbsp;2<span style="color: rgb(184, 184, 184);">. </span>&nbsp;&nbsp;<a style="color: #FFBF00;font-weight: 400em; " href="/roost-simmer ">Hosted by Simmer.io</h3></a> -->
+        </div>
 
-        ga('create', 'UA-76796224-1', 'auto');
-        ga('send', 'pageview');
-    </script>
+        <!-- Overtier Card -->
+
 
 </body>
+<!-- end main-container -->
 
-</html>
+<!-- Spacing -->
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<div class="h-30 "></div>
+<!-- Footer -->
+<footer>
+    <div class="container-fluid ">
+        <p style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC ">Made in <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color: #FFBF00;font-weight:
+                    400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></p>
+        <p style="font-family: Poppins, sans-serif;line-height: 1.3em; "><span>©2019</span> <span style="font-size: large;color: #f2893D;font-weight: 400;letter-spacing: 0.025em; ">Lit Lab Productions</span><br><span style=" ">All Rights Reserved</span></p>
+    </div>
+</footer>
+<!-- end Footer -->
+
+<!-- Back-to-Top Button -->
+<a href="#0 " class="cd-top " style="align-content: center; ">
+    <i class="material-icons " style="vertical-align: middle;font-size:x-large;color:#f2893D;font-weight: bold;align-self: center; ">arrow_upward</i></a>
+<!-- end Back-to-Top Button -->
+
+<!-- jQuery -->
+<script src="js/jquery-2.1.1.js "></script>
+<!--  plugins -->
+<script src="js/bootstrap.min.js "></script>
+<script src="js/menu.js "></script>
+<script src="js/animated-headline.js "></script>
+<script src="js/isotope.pkgd.min.js "></script>
+
+<!--  custom script -->
+<script src="js/custom.js "></script>
+
+<!-- google analytics  -->
+<script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-76796224-1', 'auto');
+    ga('send', 'pageview');
+</script>

@@ -814,7 +814,7 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a {
     display: inline-block;
-    color: #60606e;
+    color: #dfdfdf;
     padding: 0 10px;
     margin: 0 10px;
     -webkit-transition: all .2s ease-in-out .2s;
@@ -828,9 +828,9 @@ b i:last-child {
 
 .portfolio .categories-grid .categories ul li a.active {
     margin-left: 0;
-    background-color: #ffaa00;
+    background-color: #F2893D;
     padding: 0px 20px;
-    color: white;
+    color: #1b1b1b;
     border-radius: 25px;
     text-decoration: none;
 }
