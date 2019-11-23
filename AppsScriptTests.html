@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body style="background:#000;">
+
+    <center>
+        <h1 style="color:#fff">Input</h1>
+    </center>
+
+    <form id="ss-form">
+        First name:
+        <input type="hidden" name="entry.2005620554" value="Test00">
+        <br> Last name:
+        <input type="hidden" name="entry.1358198529" value="Test01">
+        <br> Mobile:
+        <input type="hidden" name="entry.1166974658" value="0101011010">
+        <br> Email:
+        <input type="hidden" name="entry.1045781291" value="Test03">
+        <br>
+        <br>
+        <input type="submit" value="Submit" id="submit-button">
+    </form>
+</body>
+
+<script>
+    $('#ss-form').submit(function(e) {
+        e.preventDefault();
+        $.ajax({
+            url: "https://docs.google.com/forms/u/0/d/e/1FAIpQLSdqInntWsfjjnWxGyRbWZHElNuy8D1lCNaTVKNLecx2TWJz9g/formResponse",
+            data: $(this).serialize(),
+            type: "POST",
+            dataType: "xml",
+            success: function(data) {
+                console.log('Submission successful');
+            },
+            error: function(xhr, status, error) {
+                console.log('Submission failed: ' + error);
+            }
+        });
+    });
+</script>
+
+</html>
