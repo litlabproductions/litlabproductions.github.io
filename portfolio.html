@@ -23,7 +23,7 @@
              Any other head content must come after these tags. -->
 
     <!-- Title / Website Tab Icon -->
-    <title> @LLP / Home </title>
+    <title> @LLP / Portfolio </title>
     <link rel="icon" href="img/WebTabIcon03.png" type="image/x-icon">
 
     <!-- Bootstrap Import -->
@@ -54,7 +54,7 @@
 
 <!-- Body Section -->
 
-<body style="max-width: 100vw;background:#ffffff">
+<body style="max-width: 100vw;background:#121212">
 
     <!-- Loading Animation Preloader -->
     <div id="preloader">
@@ -72,10 +72,9 @@
 
         <!-- LLP Header  -->
         <header class="box-header">
-            <div class="box-logo">
-                <a href="/index"><img src="img/Nav01.png" width="150" alt="Logo"></a>
+            <div class="box-logo-dark">
+                <a href="index.html"><img src="images/nav-med-size-blk.png" width="150" alt="Logo"></a>
             </div>
-
             <!-- Right Side Navigation -->
             <a class="box-primary-nav-trigger" href="#0" onclick="lockScroll();">
                 <span class="box-menu-text"></span><span class="box-menu-icon"></span>
@@ -116,44 +115,38 @@
     </div>
     <!-- End Container Fluid -->
 
-    <!-- Animation Intro -->
-    <section class="box-intro" style="max-width: 99vw;background:#ffffff">
-        <div class="table-cell" style="max-width: 99vw;">
-            <h1 class="box-headline letters rotate-2">
-                <img style="width: 100vw;" src="img/llp-anim-small.gif" alt="img/SiteLogoAnimFallback00.png" class="responsive"><br>
-                <span class="box-words-wrapper" style="text-align: center;">
-                    <b style="text-align: center;width: 100%;" class="is-visible">&nbsp;welcome.</b>
-                    <b style="text-align: center;width: 100%;">&nbsp;a&nbsp;place&nbsp;</b>
-                    <b style="text-align: center;width: 100%;">for&nbsp;games,</b>
-                    <b style="text-align: center;width: 100%;">&nbsp;for&nbsp;devs,</b>
-                    <b style="text-align: center;width: 100%;">&nbsp;a&nbsp;place&nbsp;</b>
-                    <b style="text-align: center;width: 100%;">&nbsp;to&nbsp;learn.</b>
-                    <b>&nbsp;</b>
-                </span>
-            </h1><br>
-            <h5>Welcome to the new<br>Lit Lab Productions</h5>
-            <h5>11/16/19</h5>
-            <div style="padding-top: 5%">
-            </div>
-            <div class="mouse">
-                <div class="scroll"></div>
-            </div>
-        </div>
-    </section>
-    <!-- end box-intro -->
 
     <!-- Portfolio -->
-    <div class="portfolio-div" id="portfolio" style="background: #121212;padding-bottom: -1%;">
+    <div class="portfolio-div" id="portfolio" style="background: #121212;padding-bottom: -1%;padding-top: 25vh;">
         <div class="portfolio" style="background: #121212;padding-bottom: -1%;">
-            <div class="no-padding portfolio_container" style="background: #121212;padding-bottom: -1%;">
+            <!-- portfolio_filter -->
+            <!-- top bar -->
+            <p style="font-size: 2.75rem;letter-spacing: .2em;text-align: center;font-weight: 500;color: #FFBF00;padding-bottom: 3vh;">PORTFOLIO</p>
+
+            <div class="categories-grid wow fadeInLeft ">
+                <nav class="categories text-center ">
+                    <ul class="portfolio_filter ">
+                        <li><a href=" " class="active " data-filter="* ">All</a></li>
+                        <li><a href=" " data-filter=".playable ">Web Playable</a></li>
+                        <li><a href=" " data-filter=".3d ">3D</a></li>
+                        <li><a href=" " data-filter=".2d ">2D</a></li>
+                        <li><a href=" " data-filter=".asset ">Asset</a></li>
+                        <li><a href=" " data-filter=".app ">Mobile App</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- portfolio_filter -->
+
+
+            <div class="no-padding portfolio_container " style="background: #121212;padding-bottom: -1%; ">
 
                 <!-- Roost Card -->
-                <div class="col-md-4 col-sm-6 playable 3d">
-                    <a href="/roost" class="portfolio_item">
-                        <img src="images/roost-ss2.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
+                <div class="col-md-4 col-sm-6 playable 3d ">
+                    <a href="/roost " class="portfolio_item ">
+                        <img src="images/roost-ss2.png " alt="image " class="img-responsive " />
+                        <div class="portfolio_item_hover ">
+                            <div class="portfolio-border clearfix ">
+                                <div class="item_info ">
                                     <span>Roost</span>
                                     <em>MX Racer | 3rd Person</em>
                                 </div>
@@ -164,12 +157,12 @@
                 <!-- end Roost Card -->
 
                 <!-- Polygonic Card -->
-                <div class="col-md-4 col-sm-6 playable 3d">
-                    <a href="" class="portfolio_item">
-                        <img src="images/polygonic-portfolio.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
+                <div class="col-md-4 col-sm-6 playable 3d ">
+                    <a href=" " class="portfolio_item ">
+                        <img src="images/polygonic-portfolio.png " alt="image " class="img-responsive " />
+                        <div class="portfolio_item_hover ">
+                            <div class="portfolio-border clearfix ">
+                                <div class="item_info ">
                                     <span>Polygonic Crusade</span>
                                     <span>(Coming Soon)</span>
                                     <em>RTS | Top Down</em>
@@ -181,12 +174,12 @@
                 <!-- end Polygonic Card -->
 
                 <!-- MAZE Card -->
-                <div class="col-md-4 col-sm-6 playable 2d">
-                    <a href="/maze" class="portfolio_item">
-                        <img src="images/maze-portfolio.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
+                <div class="col-md-4 col-sm-6 playable 2d ">
+                    <a href="/maze " class="portfolio_item ">
+                        <img src="images/maze-portfolio.png " alt="image " class="img-responsive " />
+                        <div class="portfolio_item_hover ">
+                            <div class="portfolio-border clearfix ">
+                                <div class="item_info ">
                                     <span>MAZE</span>
                                     <em>Hyper Casual | 2D</em>
                                 </div>
@@ -197,12 +190,12 @@
                 <!-- end MAZE Card -->
 
                 <!-- DPS Card -->
-                <div class="col-md-4 col-sm-6 asset">
-                    <a href="" class="portfolio_item">
-                        <img src="images/dps-portfolio.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
+                <div class="col-md-4 col-sm-6 asset ">
+                    <a href=" " class="portfolio_item ">
+                        <img src="images/dps-portfolio.png " alt="image " class="img-responsive " />
+                        <div class="portfolio_item_hover ">
+                            <div class="portfolio-border clearfix ">
+                                <div class="item_info ">
                                     <span>Dave's Precision Systems</span>
                                     <span>(Coming Soon)</span>
                                     <em>Asset | Vehicle Physics</em>
@@ -214,17 +207,17 @@
                 <!-- end DPS Card -->
 
                 <!-- Overtier Card -->
-                <div class="col-md-4 col-sm-6 app">
-                    <a href="/overtier" class="portfolio_item">
-                        <img src="images/overtier-portfolio.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
+                <div class="col-md-4 col-sm-6 app ">
+                    <a href="/overtier " class="portfolio_item ">
+                        <img src="images/overtier-portfolio.png " alt="image " class="img-responsive " />
+                        <div class="portfolio_item_hover ">
+                            <div class="portfolio-border clearfix ">
+                                <div class="item_info ">
                                     <span>Overtier</span>
-                                    <span style="font-size: .8em; color: #fffff4;">Seasonal Hero Ranking</span>
+                                    <span style="font-size: .8em; color: #fffff4; ">Seasonal Hero Ranking</span>
                                     <em>Mobile App | Android OS</em>
-                                    <span style="font-size: 1em; color: #fffff4;"><br>v.1.6<br></span>
-                                    <span style="font-size: .8em; color: #FFBF00;">Get it on Google Play!</span>
+                                    <span style="font-size: 1em; color: #fffff4; "><br>v.1.6<br></span>
+                                    <span style="font-size: .8em; color: #FFBF00; ">Get it on Google Play!</span>
                                 </div>
                             </div>
                         </div>
@@ -240,9 +233,8 @@
         <!-- LLP Footer -->
         <footer>
             <div class="container-fluid ">
-                <span style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC "><i class="fas fa-code" style="font-size: large;color: #f2893D"></i><span style="letter-spacing: .2em;"> </span>in<span style="letter-spacing: 0em;"> </span>
-                <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color:
-                #FFBF00;font-weight: 400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></span>
+                <span style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC "><i class="fas fa-code " style="font-size: large;color: #f2893D "></i><span style="letter-spacing: .2em; "> </span>in<span style="letter-spacing: 0em; "> </span>
+                <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color: #FFBF00;font-weight: 400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></span>
                 <p style="font-family: Poppins, sans-serif;line-height: 1.3em; "><span>©2019</span> <span style="font-size: large;color: #f2893D;font-weight: 400;letter-spacing: 0.025em; ">Lit Lab Productions</span><br><span>All Rights Reserved</span></p>
             </div>
         </footer>
@@ -260,10 +252,12 @@
     <!-- Function to lock navigation when top menu is active -->
     <script>
         function lockScroll() {
-            if (document.getElementById("portfolio").style.position == "fixed")
-                document.getElementById("portfolio").style.position = "relative";
+            document.getElementById("portfolio ").style.width = "100% ";
+
+            if (document.getElementById("portfolio ").style.position == "fixed ")
+                document.getElementById("portfolio ").style.position = "relative ";
             else
-                document.getElementById("portfolio").style.position = "fixed";
+                document.getElementById("portfolio ").style.position = "fixed ";
         }
     </script>
 
