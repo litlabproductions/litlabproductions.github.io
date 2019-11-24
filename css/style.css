@@ -467,8 +467,8 @@ h5 {
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
-    width: 100%;
+    height: 100vh;
+    width: 100vw;
     background: #1b1b1b;
     z-index: 2;
     text-align: center;
@@ -486,14 +486,14 @@ h5 {
     transition-duration: 0.4s;
     list-style: none;
     letter-spacing: .075em;
+    line-height: 4.2vh;
 }
 
 .box-primary-nav li {
-    font-size: 1.375rem;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: 0.05em 0;
+    margin: 0.1vh 0;
     text-transform: capitalize;
 }
 
@@ -506,7 +506,7 @@ h5 {
     color: rgba(204, 204, 204, 0.863);
     text-decoration: none;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 .box-primary-nav a:focus {
@@ -523,21 +523,20 @@ h5 {
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.75rem;
-    margin: 1.75em 0 .2em;
+    margin: 1.5vh 0 .2em;
     letter-spacing: .2em;
 }
 
 .box-primary-nav .box-social {
     display: inline-block;
-    margin: 0px .4em;
-    font-size: 30px;
+    margin: .5vh 1vw;
+    font-size: 4rem;
 }
 
 .box-primary-nav .box-social a {
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    font-size: 30px;
+    display: inline-block;
+    margin: 0.5vh 1vw;
+    font-size: 4rem;
 }
 
 .box-primary-nav.is-visible {
@@ -546,7 +545,7 @@ h5 {
 }
 
 .box-primary-nav {
-    padding: 8% 0 0;
+    padding: 6% 0 0;
 }
 
 .box-primary-nav li {
@@ -1261,7 +1260,7 @@ textarea:focus {
         font-size: 12px;
     }
     .box-primary-nav a {
-        font-size: 2.5rem;
+        font-size: 2.75rem;
         color: rgba(204, 204, 204, 0.863);
     }
     .box-primary-nav {
@@ -1325,6 +1324,9 @@ textarea:focus {
     .box-primary-nav {
         padding: 30% 0 0;
     }
+    .box-primary-nav a {
+        font-size: 2.25rem;
+    }
     .box-headline {
         font-size: 60px;
     }
@@ -1337,6 +1339,9 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 420px) {
+    .box-primary-nav a {
+        font-size: 2rem;
+    }
     .box-headline {
         font-size: 40px;
     }

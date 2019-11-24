@@ -5,6 +5,13 @@
     Document Details:
 
         Author: David Guido
+<!DOCTYPE html>
+<html lang="en">
+
+<!--****************************************************************
+    Document Details:
+
+        Author: David Guido
         Organization: Lit Lab Productions
         Website: www.litlabproductions.com
 
@@ -80,7 +87,7 @@
             </div>
 
             <!-- Right Side Navigation -->
-            <a class="box-primary-nav-trigger" href="#0">
+            <a class="box-primary-nav-trigger" href="#0" onclick="lockScroll();">
                 <span class="box-menu-text"></span><span class="box-menu-icon"></span>
             </a>
         </header>
@@ -155,15 +162,14 @@ I&nbsp;AM&nbsp;</b>
     <!-- end box-intro -->
 
     <!-- Home Portfolio -->
-    <div class="portfolio-div" style="background: #1b1b1b;padding-bottom: -1%;">
+    <div class="portfolio-div" id="portfolio" style="background: #1b1b1b;padding-bottom: -1%;">
         <div class="portfolio" style="background: #1b1b1b;padding-bottom: -1%;">
             <div class="no-padding portfolio_container" style="background: #1b1b1b;padding-bottom: -1%;">
 
-
                 <!-- single work -->
-                <div class="col-md-4 col-sm-12 playable 3d">
-                    <a href="roost.html" class="portfolio_item">
-                        <img src="images/roost-ss2.png" style="height: 100%;width: 100%;" alt="image" class="img-responsive" />
+                <div class="col-md-4 col-sm-6 playable 3d">
+                    <a href="" class="portfolio_item">
+                        <img src="images/roost-ss2.png" alt="image" class="img-responsive" />
                         <div class="portfolio_item_hover">
                             <div class="portfolio-border clearfix">
                                 <div class="item_info">
@@ -175,6 +181,7 @@ I&nbsp;AM&nbsp;</b>
                     </a>
                 </div>
                 <!-- end single work -->
+
 
                 <!-- single work -->
                 <div class="col-md-4 col-sm-6 playable 3d">
@@ -271,6 +278,22 @@ I&nbsp;AM&nbsp;</b>
         <!-- end Back-to-Top Button -->
 
     </div>
+
+    <script>
+        function lockScroll() {
+            if (document.getElementById("portfolio").style.position == "fixed") {
+                document.getElementById("portfolio").style.width = "100%";
+                document.getElementById("portfolio").style.background = "#ffffff";
+                document.getElementById("portfolio").style.position = "relative";
+            } else {
+                document.getElementById("portfolio").style.background = "#1b1b1b";
+                document.getElementById("portfolio").style.width = "100%";
+                document.getElementById("portfolio").style.position = "fixed";
+            }
+
+
+        }
+    </script>
 
     <!-- jQuery -->
     <script src="js/jquery-2.1.1.js "></script>
