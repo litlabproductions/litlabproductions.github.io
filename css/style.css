@@ -469,10 +469,9 @@ h5 {
     top: 0;
     height: 100%;
     width: 100%;
-    background: rgba(0, 0, 0, 0.96);
+    background: #1b1b1b;
     z-index: 2;
     text-align: center;
-    padding: 50px 0;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     overflow: auto;
@@ -486,27 +485,28 @@ h5 {
     -webkit-transition-duration: 0.4s;
     transition-duration: 0.4s;
     list-style: none;
+    letter-spacing: .075em;
 }
 
 .box-primary-nav li {
-    font-size: 22px;
     font-size: 1.375rem;
     font-weight: 300;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin: .2em 0;
+    margin: 0.05em 0;
     text-transform: capitalize;
 }
 
 .box-primary-nav a {
     display: inline-block;
-    padding: 0 .6em;
+    padding: 0 .7em;
     border-radius: 0.25em;
     -webkit-transition: all 0.2s;
     transition: all 0.2s;
-    color: #fff;
+    color: rgba(204, 204, 204, 0.863);
     text-decoration: none;
     font-weight: bold;
+    font-size: 2.5rem;
 }
 
 .box-primary-nav a:focus {
@@ -519,11 +519,12 @@ h5 {
 }
 
 .box-primary-nav .box-label {
-    color: #ffaa00;
+    color: #F2893D;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 17px;
-    margin: 1.4em 0 .2em;
+    font-size: 1.75rem;
+    margin: 1.75em 0 .2em;
+    letter-spacing: .2em;
 }
 
 .box-primary-nav .box-social {
@@ -545,7 +546,7 @@ h5 {
 }
 
 .box-primary-nav {
-    padding: 150px 0 0;
+    padding: 8% 0 0;
 }
 
 .box-primary-nav li {
@@ -1253,6 +1254,30 @@ textarea:focus {
 ==================================================*/
 
 @media (max-width: 991px) {
+    .box-headline {
+        font-size: 80px;
+    }
+    .box-intro h5 {
+        font-size: 12px;
+    }
+    .box-primary-nav a {
+        font-size: 2.5rem;
+        color: rgba(204, 204, 204, 0.863);
+    }
+    .box-primary-nav {
+        padding: 15% 0 0;
+    }
+    .box-primary-nav .box-social a {
+        font-size: 3rem;
+        padding: 0 10%;
+    }
+    .top-bar h1 {
+        font-size: 40px;
+        line-height: 30px;
+    }
+    .portfolio .categories-grid .categories ul li {
+        float: none;
+    }
     .portfolio .categories-grid span {
         margin-bottom: 0;
         text-align: center;
@@ -1277,14 +1302,15 @@ textarea:focus {
         font-size: 12px;
     }
     .box-primary-nav a {
-        padding: 5px 1em;
-        font-size: 14px;
+        font-size: 2.5rem;
+        color: rgba(204, 204, 204, 0.863);
     }
     .box-primary-nav {
-        padding: 80px 0 0;
+        padding: 25% 0 0;
     }
     .box-primary-nav .box-social a {
-        font-size: 2rem;
+        font-size: 3rem;
+        padding: 0 10%;
     }
     .top-bar h1 {
         font-size: 40px;
@@ -1296,6 +1322,9 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 520px) {
+    .box-primary-nav {
+        padding: 30% 0 0;
+    }
     .box-headline {
         font-size: 60px;
     }
