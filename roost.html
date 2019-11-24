@@ -5,8 +5,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Social media sharing -->
+    <meta property="og:image" content="http://example.com/logo.jpg">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+
     <!-- Title / Website Tab Icon -->
-    <title> @LLP / Roost </title>
+    <title>Roost MX</title>
     <link rel="icon" href="img/WebTabIcon03.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -141,6 +148,9 @@
                 <li class="box-social "><a href="https://www.youtube.com/channel/UCG6Y3kCD43Dwlt60hTRJZQA"><i class="fab fa-youtube " ></i></a></li>
                 <li class="box-social "><a href="https://www.facebook.com/litlabproductions"><i class="fab fa-facebook-f " ></i></a></li>
                 <li class="box-social "><a href="https://twitter.com/LitLabProd"><i class="fab fa-twitter " ></i></a></li>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=%20https%3A//www.litlabproductions.com/roost">Share on Facebook</a>
+                <a href="http://www.facebook.com/sharer.php?u=[EncodedURL]" onclick="javascript:genericSocialShare('[CustomSocialShareLink]')">[Social Media Share Text/Image]</a>
+
                 <!-- <li class="box-social "><a href="#0 "><i class="fab fa-dribbble " ></i></a></li>-->
             </ul>
         </div>
@@ -211,7 +221,12 @@
         <i class="material-icons " style="vertical-align: middle;font-size:x-large;color:#f2893D;font-weight: bold;align-self: center; ">arrow_upward</i></a>
     <!-- end Back-to-Top Button -->
 
-
+    <script type="text/javascript">
+        function genericSocialShare(url) {
+            window.open(url, 'sharer', 'toolbar=0,status=0,width=648,height=395');
+            return true;
+        }
+    </script>
 
 
     <!-- jQuery -->
