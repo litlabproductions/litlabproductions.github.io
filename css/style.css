@@ -988,50 +988,57 @@ footer img {
 ==================================================*/
 
 .cd-top {
+    padding-top: .25em;
+    vertical-align: middle;
     display: inline-block;
     border-radius: 25px;
-    height: 40px;
-    width: 40px;
+    height: 1.5em;
+    width: 1.5em;
     position: fixed;
-    bottom: 20px;
-    line-height: 40px;
-    font-size: 20px;
-    right: 10px;
+    bottom: 1em;
+    line-height: 1.25em;
+    font-size: 2em;
+    right: 1em;
     text-align: center;
-    color: #1b1b1b;
+    color: #000;
     background: #000000;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
-    filter: drop-shadow(0px, 0px, 100px, 100px, #ffffff);
+    filter: drop-shadow(0px, 200px, 200px, #ffffff);
 }
 
 .cd-top.cd-is-visible,
 .cd-top.cd-fade-out,
 .no-touch .cd-top:hover {
-    color: #1b1b1b;
+    filter: drop-shadow(0px, 200px, 200px, #ffffff);
+    color: #000;
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .cd-top.cd-is-visible {
-    color: #1b1b1b;
+    color: #000;
+    background: #F2893D;
     /* the button becomes visible */
     visibility: visible;
-    opacity: 1;
+    opacity: .8;
+    filter: drop-shadow(0px, 200px, 200px, #ffffff);
 }
 
 .cd-top.cd-fade-out {
-    color: #1b1b1b;
+    color: #000;
     opacity: .5;
+    filter: drop-shadow(0px, 200px, 200px, #ffffff);
 }
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #1b1b1b;
-    opacity: .5;
-    color: #1b1b1b;
+    background-color: #FFBF00;
+    opacity: .9;
+    color: #000;
+    filter: drop-shadow(0px, 200px, 200px, #ffffff);
 }
 
 
