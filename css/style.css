@@ -340,7 +340,7 @@ h5 {
 
 .box-logo {
     display: block;
-    padding-left: 10px;
+    padding-left: 2vw;
     padding-top: 10px;
     background: white;
 }
@@ -350,6 +350,7 @@ h5 {
     background: #1b1b1b;
     vertical-align: center;
     max-height: 100%;
+    padding-right: 1vw;
 }
 
 .box-primary-nav-trigger {
@@ -375,23 +376,25 @@ h5 {
 
 .box-primary-nav-trigger .box-menu-icon {
     display: inline-block;
-    position: absolute;
+    position: fixed;
     left: 50%;
     top: 50%;
     bottom: auto;
     right: auto;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    width: 18px;
-    height: 2px;
-    background-color: #FFBF00;
+    width: 2.5em;
+    height: .25em;
+    background-color: rgba(255, 191, 0, 0);
     -webkit-transition: background-color 0.3s;
     transition: background-color 0.3s;
-    list-style: none;
+    list-style: center;
+    border-radius: 25px;
 }
 
 .box-primary-nav-trigger .box-menu-icon::before,
 .box-primary-nav-trigger .box-menu-icon:after {
+    border-radius: 25px;
     content: '';
     width: 100%;
     height: 100%;
@@ -405,13 +408,15 @@ h5 {
 }
 
 .box-primary-nav-trigger .box-menu-icon::before {
-    background-color: #F2893D;
-    top: -5px;
+    background-color: #FFBF00;
+    top: 5px;
+    left: 5px;
 }
 
 .box-primary-nav-trigger .box-menu-icon::after {
     background-color: #F2893D;
-    top: 5px;
+    left: 5px;
+    top: -5px;
 }
 
 .box-primary-nav-trigger .box-menu-icon.is-clicked {
@@ -437,7 +442,6 @@ h5 {
 
 .box-primary-nav-trigger {
     width: 100px;
-    padding-left: 1em;
     background-color: transparent;
     height: 30px;
     line-height: 30px;
@@ -482,7 +486,7 @@ h5 {
     transition-duration: 0.4s;
     list-style: none;
     letter-spacing: .075em;
-    line-height: 4.2vh;
+    line-height: 4.4vh;
 }
 
 .box-primary-nav li {
@@ -541,7 +545,7 @@ h5 {
 }
 
 .box-primary-nav {
-    padding: 6% 0 0;
+    padding: 3% 0 0;
 }
 
 .box-primary-nav li {
@@ -1303,7 +1307,7 @@ textarea:focus {
         color: rgba(204, 204, 204, 0.863);
     }
     .box-primary-nav {
-        padding: 25% 0 0;
+        padding: 20% 0 0;
     }
     .box-primary-nav .box-social a {
         font-size: 3rem;
@@ -1320,7 +1324,7 @@ textarea:focus {
 
 @media only screen and (max-width: 520px) {
     .box-primary-nav {
-        padding: 30% 0 0;
+        padding: 15% 0 0;
     }
     .box-primary-nav a {
         font-size: 2.25rem;
