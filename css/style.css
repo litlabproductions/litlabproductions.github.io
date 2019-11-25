@@ -995,10 +995,10 @@ footer img {
     height: 1.5em;
     width: 1.5em;
     position: fixed;
-    bottom: 1em;
+    bottom: 0.75em;
     line-height: 1.25em;
     font-size: 2em;
-    right: 1em;
+    right: 0.75em;
     text-align: center;
     color: #000;
     background: #000000;
