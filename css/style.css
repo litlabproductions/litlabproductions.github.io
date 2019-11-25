@@ -989,7 +989,7 @@ footer img {
 
 .cd-top {
     display: inline-block;
-    border-radius: 10px;
+    border-radius: 25px;
     height: 40px;
     width: 40px;
     position: fixed;
@@ -998,7 +998,7 @@ footer img {
     font-size: 20px;
     right: 10px;
     text-align: center;
-    color: #fcb110;
+    color: #1b1b1b;
     background: #000000;
     visibility: hidden;
     opacity: 0;
@@ -1010,25 +1010,28 @@ footer img {
 .cd-top.cd-is-visible,
 .cd-top.cd-fade-out,
 .no-touch .cd-top:hover {
+    color: #1b1b1b;
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .cd-top.cd-is-visible {
+    color: #1b1b1b;
     /* the button becomes visible */
     visibility: visible;
     opacity: 1;
 }
 
 .cd-top.cd-fade-out {
+    color: #1b1b1b;
     opacity: .5;
 }
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #ffaa00;
-    opacity: 1;
-    color: #fff;
+    background-color: #1b1b1b;
+    opacity: .5;
+    color: #1b1b1b;
 }
 
 
