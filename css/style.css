@@ -93,16 +93,41 @@ body {
     left: 0;
     width: 99.8%;
     height: 100%;
-    border: double .25 transparent;
+    border: double .15em transparent;
     border-radius: 2.5em;
-    background-image: linear-gradient(#fff, #fff), radial-gradient(circle at top left, #f3f3f3, #f3f3f3);
+    background-image: linear-gradient(#F2893D, #FFBF00), radial-gradient(circle at top left, #F2893D, #FFBF00);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
 
 .iframe-parent {
+    z-index: 0;
     position: relative;
     padding-top: 56.25%;
+}
+
+.iframe-button {
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    right: 3rem;
+    bottom: -7rem;
+    background-image: linear-gradient(#F2893D, #FFBF00);
+    border-radius: 25%;
+    border: 0px;
+    color: #121212;
+    font-size: 2rem;
+    opacity: 50%;
+}
+
+.iframe-button:hover {
+    background: transparent;
+    color: #FFBF00;
+    opacity: 100%;
+}
+
+.fas fa-arrows-alt {
+    color: #c01111;
 }
 
 .responsive-dark {
