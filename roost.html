@@ -4,11 +4,40 @@
 <!--****************************************************************
     Document Details:
 
-        Author: David Guido
+              Author: David Guido
+       Author E-mail: davidguido@litlabproductions.com
         Organization: Lit Lab Productions
-        Website: www.litlabproductions.com
+              Domain: www.litlabproductions.com
+                Link: www.litlabproductions.com/roost
 
-        File Name: roost.html
+          Page Title: Roost MX
+           File Name: roost.html
+
+         Description:   The Roost webpage at LitLabProductions.com allows users to play game 'Roost' through thier web browser
+                        To make the iFrame fullscreen, select the fullscreen button in the lower right hand side of the games iFrame
+                        To return from fullscreen, press ESC on the keyboard
+
+                        A full list of controls is provided to the right of the games iFrame
+
+                        To contact the developer (David Guido), Players can select either the 'Submit a Bug Report' or 'Send me a Message' button
+                        Doing so will open a new tab in the players web browser, allowing them to log details into a form,
+                        describing any issues they might be having or to reach out for all other inquries
+
+                        Share icons will take the player to:
+                            a.) Facebook
+                            b.) Twitter
+                        Where the player can then edit a custom post which will lead readers back to (this) Roost game page
+
+                        This page also provides a link to all other playable games availiable at the Lit Lab Productions domain                        
+     Roost Responsive   * Currently Availible Hosts *
+      iFrame Details:
+                            [Default]   Lit Lab Productions
+                                        https://github.com/litlabproductions/Roost/tree/master/docs/Build
+                                        Self hosted via GitHub repository
+
+                            [Option 1]  Simmer.io
+                                        https://mygame.page/roost
+                                        Backup source in the case of GitHub becoming inaccsible
 ********************************************************************-->
 
 <!-- Head Section -->
@@ -131,32 +160,34 @@
     <!-- main-container -->
     <div class="col-md-12" style="max-width:100vw;background: #121212;">
 
+        <!-- Roost Web Game iFrame -->
         <div class="col-md-9" style="padding:3%;padding-bottom: 10%;">
             <div id="iframe-parent" class="iframe-parent">
                 <iframe id="resp-iframe" class="resp-iframe" src="https://www.litlabproductions.com/Roost/roost-raw" allowfullscreen></iframe>
                 <button id="iframe-button" class="iframe-button"><i style="text-shadow: 0 0 10px #51ff5c;height: 100%;width: 100%;" class="fas fa-arrows-alt"></i></button>
             </div>
-
         </div>
 
+        <!-- Roost Logo -->
         <div class="col-md-3" style="padding-top: 20vh;padding-bottom: 2vh;">
             <img style=" max-width:25em; " src="images/roost-logo06.png " alt="img/SiteLogoAnimFallback00.png " class="responsive img-responsive ">
         </div>
 
         <h3 style="color: #FFBF00;letter-spacing: .05em;">Controls</h3>
 
+        <!-- Controls -->
         <div class="col-md-3">
 
+            <!-- Controls Column One -->
             <div class="col-md-1" style="text-align: right;width: fit-content;">
                 <h4 style="color: #29ABCC;font-weight: 100em;">Accelerate&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">W</span></h4>
-
                 <h4 style="color: #29ABCC;font-weight: 100em; ">Lean Left&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">A</span></h4>
                 <h4 style="color: #29ABCC;font-weight: 100em; ">Lean Front&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; "><i class="fas fa-arrow-up "></i></span></h4>
                 <h4 style="color: #29ABCC;font-weight: 100em; ">Shift Down&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">N</span></h4>
-
                 <h4 style="color: #29ABCC;font-weight: 100em; ">Menu&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; "><i class="fas fa-times "></i></span></h4>
             </div>
 
+            <!-- Controls Column Two -->
             <div class="col-md-1 " style="text-align: left;width: fit-content;">
                 <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">S</span>&nbsp;&nbsp;&nbsp;Brake</h4>
                 <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">D</i></span>&nbsp;&nbsp;&nbsp;Lean Right</h4>
@@ -166,46 +197,55 @@
             </div>
         </div>
 
+        <!-- Share -->
         <div class="col-md-3 " style="padding-top: 1%;">
             <h3 style="color: #FFBF00;letter-spacing: .05em;padding-left: 0%;">Share</h3>
             <ul class="social-ul " style="padding-left: 3% ">
-                <!--<li class="box-social "><a href="/contact "><i class="fas fa-envelope " ></i></a></li>
-                    <li class="box-social "><a href="https://www.instagram.com/litlabproductions/ "><i class="fab fa-instagram " ></i></a></li>
-                    <li class="box-social "><a href="https://www.youtube.com/channel/UCG6Y3kCD43Dwlt60hTRJZQA "><i class="fab fa-youtube " ></i></a></li>-->
+
+                <!-- Share via Facebook -->
                 <li class="box-social "><a href="https://www.facebook.com/sharer/sharer.php?u=%20https%3A//www.litlabproductions.com/roost "><i class="fab fa-facebook-f " ></i></a></li>
-                <li class="box-social "><a href="https://twitter.com/intent/tweet?text=https%3A//www.litlabproductions.com/roost%0ARoost%20MX%0AMotocross%20Sandbox%20Demo%0A%0Aby%20@LitLabProd%0APlay%20free%20games%20in%20your%20web%20browser
-                "><i class="fab fa-twitter " ></i></a></li>
+
+                <!-- Share via Twitter -->
+                <li class="box-social "><a href="https://twitter.com/intent/tweet?text=https%3A//www.litlabproductions.com/roost%0ARoost%20MX%0AMotocross%20Sandbox%20Demo%0A%0Aby%20@LitLabProd%0APlay%20free%20games%20in%20your%20web%20browser"><i class="fab fa-twitter " ></i></a></li>
             </ul>
         </div>
     </div>
 
+    <!-- Details Section -->
     <div class="col-md-12" style="max-width:100vw;background: #121212;">
 
         <div class="col-md-12 " style="padding-right: 10%;padding-left: 3%;">
             <div class="col-md-7">
+
+                <!-- Details Label -->
                 <h3 style="color: #FFBF00;letter-spacing: .05em;padding-left: 0%; ">Details</h3>
 
+                <!-- Detail Section 00 -->
                 <h4 style="padding-top: 0.75em;color:#F2893D;padding-left:1%;padding-top: 1%; ">Core Control System</h4>
                 <div style="padding-left:2%;padding-right: 2%; ">
                     <p style="font-size: 2rem "><i>>Lean back over whoops</i>, at the <i>base of a berm</i>, or to <i>preload</i> off the <i>base of a jump</i></p>
                 </div>
 
+                <!-- Detail Section 01 -->
                 <h4 style="color:#F2893D;padding-left:1%;padding-top: 3%; ">The Whip System</h4>
                 <div style="padding-left:2%;padding-right: 2%; ">
                     <p style="font-size: 2rem ">Full control of the bikes rotation while airborne.<i> Pull left, right, backward</i> or <i>push forward</i></p>
                 </div>
 
+                <!-- Detail Section 02 -->
                 <h4 style="color:#F2893D;padding-left:1%;padding-top:3% ">The Color System</h4>
                 <div style="padding-left:2%;padding-right: 2%; ">
                     <p style="font-size: 2rem ">Eight customizable bike parts using <i>16,777,216</i> possible hex colors or 6 premade textures</p>
                 </div>
 
+                <!-- Detail Section 03 -->
                 <h4 style="color:#F2893D;padding-left:1%;padding-top: 3%; ">Made with Lightweight Render Pipeline</h4>
                 <div style="padding-left:2%;padding-right: 2%; ">
                     <p style="font-size: 2rem ">Lightweight build ideal for WebGL builds</p>
                 </div>
             </div>
 
+            <!-- Alternative Host Options -->
             <div class="col-md-5" style="padding-left: 5vw;">
                 <div class="col-md-5 " style="padding-top: 2%;width: fit-content;">
                     <h3 style="color: #FFBF00;letter-spacing: .05em;line-height: 1em;">Alternative Host Options</h3>
@@ -214,37 +254,39 @@
                         <h4 style="color: #F2893D;font-weight: 150em;padding-left: 1vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Option<span style="color: rgb(184, 184, 184); ">: </span>&nbsp;&nbsp;<a id="host-option-label" href="javascript:void(0);" style="color: #29ABCC;font-weight: 400em; ">Simmer.io</h4></a>
                 </div>
 
+                <!-- Bug Report / Contact Links -->
                 <div class="col-md-5 " style="padding-top: 3%;width: fit-content; ">
-
                     <h3 style="padding-bottom: 1%;color: #FFBF00;letter-spacing: .05em; ">Find an Bug?<br>Have a suggestion?</h3>
                     <h5 style="padding-bottom: 2%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bug " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/bug-report " style="color: #29ABCC; ">Submit a Bug Report</a></h5>
                     <h5>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-envelope " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/contact " style="color: #29ABCC; ">Send Me a Message</a></h5>
                 </div>
 
+                <!-- More Playable Games Section -->
                 <div class="col-md-5 " style="padding-top: 3%;width: fit-content; ">
-
                     <h3 style="padding-bottom: 1%;color: #FFBF00;letter-spacing: .05em; ">More Playable Games</h3>
                     <h5 style="padding-bottom: 2%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shield-alt " style="color: #F2893D; "></i>&nbsp;&nbsp;<a style="color: #29ABCC; ">Polygonic Crusade (Coming soon)</a></h5>
                     <h5>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-circle " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/maze " style="color: #29ABCC; ">MAZE</a></h5>
                 </div>
             </div>
-
-
         </div>
     </div>
     <!-- end main-container -->
 
     <!-- LLP Footer -->
     <footer style="max-width: 100vw; ">
+
+        <!-- Spacing -->
         <div class="col-md-12 " style="width:100%;background: #121212;padding-left: 0%;padding-right: 0%; ">
-
+            <!-- Spacing OUTSIDE Footer -->
             <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
             <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
-
             <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
 
+            <!-- Spacing INSIDE Footer -->
             <div class="h-30 " style="padding-left: 0%;width:100%;background: #1b1b1b; "></div>
         </div>
+
+        <!-- LLP Author Section -->
         <div class="container-fluid ">
             <span style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC "><i class="fas fa-code " style="font-size: large;color: #f2893D "></i><span style="letter-spacing: .2em; "> </span>in<span style="letter-spacing: 0em; "> </span>
             <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color: #FFBF00;font-weight: 400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></span>
@@ -255,8 +297,7 @@
 
     <!-- Back-to-Top Button -->
     <a href="#0 " class="cd-top " style="align-content: center; ">
-        <i class="material-icons " style="vertical-align: middle;width: 100%;height:100% ">arrow_upward
-                </i>
+        <i class="material-icons " style="vertical-align: middle;width: 100%;height:100% ">arrow_upward</i>
     </a>
     <!-- end Back-to-Top Button -->
 
@@ -298,42 +339,28 @@
         document.addEventListener('MSFullscreenChange', fullscreenChange);
 
         function fullscreen() {
-            // check if fullscreen mode is available
-            if (document.fullscreenEnabled ||
-                document.webkitFullscreenEnabled ||
-                document.mozFullScreenEnabled ||
-                document.msFullscreenEnabled) {
+            if (document.fullscreenEnabled || document.webkitFullscreenEnabled ||
+                document.mozFullScreenEnabled || document.msFullscreenEnabled) { // Check for fullscreen availability
+                var iframe = document.getElementById("resp-iframe"); // Element which will be fullscreen
 
-                // which element will be fullscreen
-                var iframe = document.getElementById("resp-iframe");
-                // Do fullscreen
-                if (iframe.requestFullscreen) {
+                if (iframe.requestFullscreen) // Request fullscreen access
                     iframe.requestFullscreen();
-                } else if (iframe.webkitRequestFullscreen) {
+                else if (iframe.webkitRequestFullscreen)
                     iframe.webkitRequestFullscreen();
-                } else if (iframe.mozRequestFullScreen) {
+                else if (iframe.mozRequestFullScreen)
                     iframe.mozRequestFullScreen();
-                } else if (iframe.msRequestFullscreen) {
+                else if (iframe.msRequestFullscreen)
                     iframe.msRequestFullscreen();
-                }
-            } else {
+            } else
                 document.querySelector('.error').innerHTML = 'Your browser is not supported';
-            }
         }
 
         function fullscreenChange() {
-            if (document.fullscreenEnabled ||
-                document.webkitIsFullScreen ||
-                document.mozFullScreen ||
-                document.msFullscreenElement) {
+            if (document.fullscreenEnabled || document.webkitIsFullScreen ||
+                document.mozFullScreen || document.msFullscreenElement)
                 console.log('enter fullscreen');
-            } else {
+            else
                 console.log('exit fullscreen');
-            }
-            // force to reload iframe once to prevent the iframe source didn't care about trying to resize the window
-            // comment this line and you will see
-            // var iframe = document.querySelector('iframe');
-            //iframe.src = iframe.src;
         }
     </script>
 

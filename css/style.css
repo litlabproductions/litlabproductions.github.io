@@ -37,7 +37,7 @@ body {
     height: 100%;
     font-family: 'Poppins', sans-serif;
     line-height: 1.8;
-    color: rgb(182, 182, 182);
+    color: #b6b6b6;
     align-content: center;
     background: #121212;
 }
@@ -124,6 +124,8 @@ body {
     background: transparent;
     color: #FFBF00;
     opacity: 100%;
+    width: 7rem;
+    height: 7rem;
 }
 
 .fas fa-arrows-alt {
@@ -352,7 +354,6 @@ h5 {
 .box-header {
     height: 5.5em;
     background: #1b1b1b;
-    box-shadow: none;
 }
 
 .box-header {
@@ -362,6 +363,9 @@ h5 {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    -webkit-box-shadow: 0 3px 10px 4px #29abccad;
+    -moz-box-shadow: 0 3px 10px 4px #29abccad;
+    box-shadow: 0 3px 10px 4px #29abccad;
 }
 
 .box-header.is-fixed {
@@ -383,6 +387,9 @@ h5 {
 .box-header.menu-is-open {
     background: #1b1b1b;
     background: #1b1b1b;
+    -webkit-box-shadow: 0 2px 15px 3px #ffbf00a9;
+    -moz-box-shadow: 0 2px 15px 3px #ffbf00a9;
+    box-shadow: 0 2px 15px 3px #ffbf00a9;
 }
 
 .box-logo {
@@ -457,12 +464,12 @@ h5 {
 .box-primary-nav-trigger .box-menu-icon::before {
     background-color: #FFBF00;
     top: 5px;
-    left: 5px;
+    left: -2vw;
 }
 
 .box-primary-nav-trigger .box-menu-icon::after {
     background-color: #F2893D;
-    left: 5px;
+    left: -2vw;
     top: -5px;
 }
 
@@ -513,7 +520,7 @@ h5 {
 .box-primary-nav {
     position: fixed;
     left: 0;
-    top: 0;
+    top: 3vh;
     height: 100vh;
     width: 100vw;
     background: #1b1b1b;
