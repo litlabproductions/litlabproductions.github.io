@@ -104,6 +104,7 @@ body {
     z-index: 0;
     position: relative;
     padding-top: 56.25%;
+    filter: drop-shadow(0 0 2em rgba(20, 20, 20, 0.863));
 }
 
 .iframe-button {
@@ -113,19 +114,21 @@ body {
     right: 3rem;
     bottom: -7rem;
     background-image: linear-gradient(#F2893D, #FFBF00);
-    border-radius: 25%;
+    border-radius: 50%;
     border: 0px;
     color: #121212;
     font-size: 2rem;
-    opacity: 50%;
+    opacity: 100%;
+    filter: drop-shadow(0 0 0.1em #353535e3);
 }
 
 .iframe-button:hover {
     background: transparent;
     color: #FFBF00;
     opacity: 100%;
-    width: 7rem;
-    height: 7rem;
+    width: 4rem;
+    height: 4rem;
+    filter: drop-shadow(0 0 0.1em #353535e3);
 }
 
 .fas fa-arrows-alt {
@@ -363,9 +366,9 @@ h5 {
     transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    -webkit-box-shadow: 0 3px 10px 4px #29abccad;
-    -moz-box-shadow: 0 3px 10px 4px #29abccad;
-    box-shadow: 0 3px 10px 4px #29abccad;
+    -webkit-box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
+    -moz-box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
+    box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
 }
 
 .box-header.is-fixed {
@@ -387,9 +390,9 @@ h5 {
 .box-header.menu-is-open {
     background: #1b1b1b;
     background-color: #1b1b1b;
-    -webkit-box-shadow: 0 2px 15px 3px #ffbf00a9;
-    -moz-box-shadow: 0 2px 15px 3px #ffbf00a9;
-    box-shadow: 0 2px 15px 3px #ffbf00a9;
+    -webkit-box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
+    -moz-box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
+    box-shadow: 0 0.1em 0.25em 0.1em #3a3a3a65;
 }
 
 .box-logo {
@@ -523,7 +526,7 @@ h5 {
     top: 3vh;
     height: 100vh;
     width: 100vw;
-    background: #1b1b1b;
+    background: #121212;
     z-index: 2;
     text-align: center;
     -webkit-backface-visibility: hidden;
@@ -1055,44 +1058,44 @@ footer img {
     right: 0.75em;
     text-align: center;
     color: #000;
-    background: #000000;
     visibility: hidden;
     opacity: 0;
     -webkit-transition: opacity .3s 0s, visibility 0s .3s;
     transition: opacity .3s 0s, visibility 0s .3s;
-    filter: drop-shadow(0px, 200px, 200px, #ffffff);
+    background-image: linear-gradient(#F2893D, #FFBF00);
+    filter: drop-shadow(0 0 0.1em #353535e3);
 }
 
 .cd-top.cd-is-visible,
 .cd-top.cd-fade-out,
 .no-touch .cd-top:hover {
-    filter: drop-shadow(0px, 200px, 200px, #ffffff);
-    color: #000;
+    background-image: linear-gradient(#FFBF00, #F2893D);
+    filter: drop-shadow(0 0 0.1em #353535e3);
+    color: #29ABCC;
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
 }
 
 .cd-top.cd-is-visible {
     color: #000;
-    background: #F2893D;
     /* the button becomes visible */
     visibility: visible;
     opacity: .8;
-    filter: drop-shadow(0px, 200px, 200px, #ffffff);
+    filter: drop-shadow(0 0 0.1em #353535e3);
 }
 
 .cd-top.cd-fade-out {
     color: #000;
     opacity: .5;
-    filter: drop-shadow(0px, 200px, 200px, #ffffff);
+    filter: drop-shadow(0 0 0.1em #353535e3);
 }
 
 .no-touch .cd-top:hover,
 .no-touch .cd-top:focus {
-    background-color: #FFBF00;
     opacity: .9;
-    color: #000;
-    filter: drop-shadow(0px, 200px, 200px, #ffffff);
+    background-image: linear-gradient(#F2893D, #FFBF00);
+    filter: drop-shadow(0 0 0.1em #353535e3);
+    color: #ffffff;
 }
 
 
