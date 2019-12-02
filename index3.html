@@ -8,10 +8,10 @@
        Author E-mail: davidguido@litlabproductions.com
         Organization: Lit Lab Productions
               Domain: www.litlabproductions.com
-                Link: www.litlabproductions.com/roost
+                Link: www.litlabproductions.com/home
 
-          Page Title: Portfolio
-           File Name: portfolio.html
+          Page Title: Home
+           File Name: home.html
 ********************************************************************-->
 
 <!-- Head Section -->
@@ -35,14 +35,14 @@
     <!-- modernizr -->
     <script src="js/modernizr.js"></script>
 
-    <!-- * 9/7/2019 Additions * -->
+
+    <!-- Additions -->
+    <!-- Material Icons -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- * 9/7/2019 Additions * -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap" rel="stylesheet">
+    <!-- Home Only Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 
     <!-- Internet Explorer Fallback: -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -53,7 +53,7 @@
             <![endif]-->
 </head>
 
-<body>
+<body id="body" onload="setDate()" style="background: #ffffff;">
 
     <!-- Preloader -->
     <div id="preloader">
@@ -70,7 +70,7 @@
         <!-- LLP header -->
         <header class="box-header" id="header">
             <div class="box-logo">
-                <a href="/home"><img src="images/nav-med-size-blk.png" height="65" alt="Logo"></a>
+                <a href="#"><img src="images/nav-med-size-blk.png" height="65" alt="Logo"></a>
             </div>
             <!-- LLP-nav -->
             <a class="box-primary-nav-trigger" href="#0">
@@ -79,54 +79,27 @@
             <!-- LLP-primary-nav-trigger -->
         </header>
         <!-- end LLP header -->
+
         <!-- LLP Nav -->
         <nav>
             <ul class="box-primary-nav">
                 <br>
                 <li>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/portfolio " style="color: #FFBF00;">Portfolio&nbsp;&nbsp;</a><i class=" fas fa-circle " style="color: #FFBF00;font-size: small;padding-bottom: 8px"></i></li>
-                    <li><a href="https://www.litlabproductions.com/resume">Resume</a></li>
-                    <li><a href="/docs ">Documentation</a></li>
-                    <li><a href="/brand-colors ">Brand Colors</a></li>
-                    <li><a href="/overtier ">Overtier</a></li>
-
-                    <li class="box-label ">Playable</li>
-                    <li><a href="/roost ">Roost MX</a></li>
-                    <li><a href="# ">Polygonic Crusade</a></li>
-                    <li><a href="/maze ">MAZE</a></li>
-
-                    <li class="box-label ">Asset</li>
-                    <li><a href="# ">Dave's Precision Systems</a></li>
-
-                    <li class="box-label ">Contact <span style="font-weight: 2em;font-size: larger;color:#FFBF00 ">|</span> Social</li>
-                    <li class="box-social "><a href="/contact "><i class="fas fa-envelope "></i></a></li>
-                    <li class="box-social "><a href="https://www.instagram.com/litlabproductions "><i class="fab fa-instagram "></i></a></li>
-                    <li class="box-social "><a href="https://www.youtube.com/channel/UCG6Y3kCD43Dwlt60hTRJZQA "><i class="fab fa-youtube "></i></a></li><br>
-                    <li class="box-social "><a href="https://www.facebook.com/litlabproductions/ "><i class="fab fa-facebook "></i></a></li>
-                    <li class="box-social "><a href="https://www.reddit.com/user/litlabproductions "><i class="fab fa-reddit "></i></a></li>
-                    <li class="box-social "><a href="https://www.github.com/litlabproductions "><i class="fab fa-github "></i></a></li>
-            </ul>
-        </nav>
-        <!-- End LLP Nav -->
-        <!-- LLP Nav -->
-        <nav>
-            <ul class="box-primary-nav">
-                <br>
-                <li><a href="/index">Home</a></li>
-                <li><a href="/portfolio " style="color: #FFBF00;">&nbsp;&nbsp;&nbsp;Portfolio</a><i class=" fas fa-circle " style="color: #FFBF00;font-size: small;padding-bottom: 8px"></i></li>
-                <li><a href="/resume ">Resume</a></li>
+                    <a href="/index" style="color: #FFBF00;">
+                    &nbsp;&nbsp;Home</a><i class=" fas fa-circle " style="color: #FFBF00;font-size: small;padding-bottom: 8px"></i></li>
+                <li><a href="/portfolio ">Portfolio</a></li>
+                <li><a href="https://www.litlabproductions.com/resume">Resume</a></li>
                 <li><a href="/docs ">Documentation</a></li>
                 <li><a href="/brand-colors ">Brand Colors</a></li>
                 <li><a href="/overtier ">Overtier</a></li>
 
                 <li class="box-label ">Playable</li>
-                <li><a href="/roost ">Roost</a></li>
+                <li><a href="/roost ">Roost MX</a></li>
                 <li><a href="# ">Polygonic Crusade</a></li>
                 <li><a href="/maze ">MAZE</a></li>
 
                 <li class="box-label ">Asset</li>
-                <li><a href="# ">Precision Systems</a></li>
+                <li><a href="# ">Dave's Precision Systems</a></li>
 
                 <li class="box-label ">Contact <span style="font-weight: 2em;font-size: larger;color:#FFBF00 ">|</span> Social</li>
                 <li class="box-social "><a href="/contact "><i class="fas fa-envelope "></i></a></li>
@@ -139,47 +112,42 @@
         </nav>
         <!-- End LLP Nav -->
 
-    </div>
+        <!-- LLP-intro -->
+        <section class="box-intro " style="background: #ffffff; ">
 
-
-    <!-- end top bar -->
-
-    <!-- main container -->
-    <div class="main-container portfolio-inner clearfix">
-        <!-- portfolio div -->
-        <div class="portfolio-div">
-            <div class="portfolio">
-                <div class="categories-bg">
-                    <!-- top bar -->
-                    <div class="top-bar">
-
-                        <h3 style="color:#FFBF00;letter-spacing: .05em;font-size: 4.5rem;">Portfolio</h3>
-
-                    </div>
-                    <!-- end top bar -->
-                    <!-- portfolio_filter -->
-                    <div class="categories-grid wow fadeInLeft">
-                        <nav class="categories text-center">
-                            <ul class="portfolio_filter">
-                                <li><a href=" " class="active " data-filter="* ">All</a></li>
-                                <li><a href=" " data-filter=".playable ">Web Playable</a></li>
-                                <li><a href=" " data-filter=".3d ">3D</a></li>
-                                <li><a href=" " data-filter=".2d ">2D</a></li>
-                                <li><a href=" " data-filter=".asset ">Asset</a></li>
-                                <li><a href=" " data-filter=".app ">Mobile App</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+            <div class="table-cell ">
+                <h1 class="box-headline letters rotate-2 ">
+                    <img style="padding-bottom: 0%;max-width:95% " src="img/llp-anim-small.gif " alt="img/SiteLogoAnimFallback00.png " class="responsive "><br>
+                    <span class="box-words-wrapper " style="text-align: center; ">
+                        <b style="text-align: center;width: 100%; "class="is-visible ">&nbsp;for&nbsp;games,</b>
+                        <b style="text-align: center;width: 100%; ">&nbsp;for&nbsp;devs,</b>
+                        <b style="text-align: center;width: 100%; ">&nbsp;to&nbsp;learn.</b>
+                        <b style="text-align: center;width: 100%; ">&nbsp;welcome.</b>
+                        <b>&nbsp;</b>
+                    </span>
+                </h1>
+                <h5>Welcome to the new<br><span style="font-weight: 600;color:rgb(117, 117, 117);">Lit Lab Productions</span></h5>
+                <h5 style="font-weight: 400;" id="date">00</h5>
+                <div style="padding-top: 5% ">
                 </div>
-                <!-- portfolio_filter -->
+                <div class="mouse ">
+                    <div class="scroll "></div>
+                </div>
+        </section>
+        <!-- end LLP-intro -->
+        </div>
 
+        <!-- LLP portfolio div -->
+        <div class="portfolio-div ">
+            <!-- LLP Portfolio -->
+            <div class="portfolio " id="portfolio ">
                 <!-- Portfolio Container -->
                 <div class="no-padding portfolio_container ">
 
                     <!-- Project 00 -->
-                    <div class="col-md-3 col-sm-6 playable 2d">
+                    <div class="col-md-3 col-sm-6 2d ">
                         <a href="/maze " class="portfolio_item ">
-                            <img src="images/maze-portfolio.png " alt="image " class="img-responsive" />
+                            <img src="images/maze-portfolio.png " alt="image " class="img-responsive " />
                             <div class="portfolio_item_hover ">
                                 <div class="portfolio-border clearfix ">
                                     <div class="item_info ">
@@ -216,7 +184,7 @@
                             <div class="portfolio_item_hover ">
                                 <div class="portfolio-border clearfix ">
                                     <div class="item_info ">
-                                        <span>Roost MX</span>
+                                        <span>Roost</span>
                                         <em>MX Racer | 3rd Person</em>
                                     </div>
                                 </div>
@@ -233,10 +201,10 @@
                                 <div class="portfolio-border clearfix ">
                                     <div class="item_info ">
                                         <span>Overtier</span>
-                                        <span style="font-size: 1.5rem; color: #fffff4; ">Seasonal Hero Ranking</span>
+                                        <span style="font-size: .8em; color: #fffff4; ">Seasonal Hero Ranking</span>
                                         <em>Mobile App | Android OS</em>
-                                        <span style="font-size: 2rem; color: #fffff4; "><br>v.1.6<br></span>
-                                        <span style="font-size: 1.65rem; color: #FFBF00; ">Get it on Google Play!</span>
+                                        <span style="font-size: 1em; color: #fffff4; "><br>v.1.6<br></span>
+                                        <span style="font-size: .8em; color: #FFBF00; ">Get it on Google Play!</span>
                                     </div>
                                 </div>
                             </div>
@@ -264,30 +232,26 @@
                 </div>
                 <!-- end Portfolio Container -->
             </div>
-            <!-- portfolio -->
+            <!-- end LLP Portfolio -->
         </div>
-        <!-- end portfolio div -->
-    </div>
-    <!-- end main container -->
+        <!-- end LLP portfolio div -->
 
+        <!-- LLP Footer -->
+        <footer>
+            <div class="container-fluid" style="text-align: center;">
+                <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400;"><span style="color: #f2893D ">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing: -.1em; "> </span>
+                <i class="material-icons " style="font-size: 2.25rem;color: #f2893D ">whatshot</i><span style="letter-spacing: -.05em; "> </span>by <a style="font-family: 'Montserrat', sans-serif;color: #FFBF00;font-weight: 500;letter-spacing: 0.025em"
+                    href="https://www.litlabproductions.com/resume">David Guido</a></span>
+                <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500;"><span>©2019</span> <a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing: 0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
+            </div>
+        </footer>
 
-    <!-- LLP Footer -->
-    <footer>
-
-        <div class="container-fluid" style="text-align: center;">
-            <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400;"><span style="color: #f2893D ">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing: -.1em; "> </span>
-            <i class="material-icons " style="font-size: 2.25rem;color: #f2893D ">whatshot</i><span style="letter-spacing: -.05em; "> </span>by <a style="font-family: 'Montserrat', sans-serif;color: #FFBF00;font-weight: 500;letter-spacing: 0.025em" href="https://www.litlabproductions.com/resume">David Guido</a></span>
-            <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500;"><span>©2019</span> <a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing: 0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
-        </div>
-    </footer>
-
-
-    <!-- Back-to-Top Button -->
-    <a href="#0 " class="cd-top " style="align-content: center; ">
-        <i class="material-icons " style="vertical-align: middle;;width: 100%;height:100% ">arrow_upward
-                </i>
-    </a>
-    <!-- end Back-to-Top Button -->
+        <!-- Back-to-Top Button -->
+        <a href="#0 " class="cd-top " style="align-content: center; ">
+            <i class="material-icons " style="vertical-align: middle;;width: 100%;height:100% ">arrow_upward
+            </i>
+        </a>
+        <!-- end Back-to-Top Button -->
     </div>
 
     <!-- Function to set current date -->
