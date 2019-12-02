@@ -15,8 +15,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'" />
+
     <!-- Keep the above 3 meta tags.
              They must come first in the head. 
              Any other head content must come after these tags. -->
@@ -34,9 +36,6 @@
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
-
     <!-- Internet Explorer Fallback: -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -46,9 +45,10 @@
             <![endif]-->
 </head>
 
+
 <!-- Body Section -->
 
-<body id="body" style="max-width: 100vw;background:#121212">
+<body>
 
     <!-- Loading Animation Preloader -->
     <div id="preloader">
@@ -63,56 +63,62 @@
 
     <!-- Container Fluid-->
     <div class="container-fluid">
-
-        <!-- LLP Header  -->
-        <header class="box-header">
-            <div class="box-logo-dark">
-                <a href="index.html"><img src="images/nav-med-size-blk.png" style="height: 4.8em;padding-top:0.75em" alt="Logo"></a>
+        <!-- LLP header -->
+        <header class="box-header" id="header">
+            <div class="box-logo">
+                <a href="/home"><img src="images/nav-med-size-blk.png" height="65" alt="Logo"></a>
             </div>
-
-            <!-- Right Side Navigation -->
-            <a class="box-primary-nav-trigger" href="#0" onclick="lockScroll();">
-                <span class="box-menu-text"></span><span class="box-menu-icon"></span>
+            <!-- LLP-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-icon"></span>
             </a>
+            <!-- LLP-primary-nav-trigger -->
         </header>
-        <!-- End LLP header -->
+        <!-- end LLP header -->
 
+
+        <!-- LLP Nav -->
         <!-- LLP Nav -->
         <nav>
             <ul class="box-primary-nav">
                 <br>
-                <li><a href="/index">Home</a></li>
-                <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/resume">Resume</a></li>
-                <li><a href="/docs">Documentation</a></li>
-                <li><a href="/brand-colors">Brand Colors</a></li>
-                <li><a href="/overtier">Overtier</a></li>
+                <li>
+                    <li><a href="/home ">Home</a></li>
 
-                <li class="box-label">Playable</li>
-                <li><a href="/roost">Roost</a></li>
-                <li><a href="#">Polygonic Crusade</a></li>
-                <li><a href="/maze">MAZE</a></li>
+                    <li><a href="/portfolio ">Portfolio</a></li>
+                    <li><a href="https://www.litlabproductions.com/resume">Resume</a></li>
+                    <li><a href="/docs ">Documentation</a></li>
+                    <li><a href="/brand-colors ">Brand Colors</a></li>
+                    <li><a href="/overtier ">Overtier</a></li>
 
-                <li class="box-label">Asset</li>
-                <li><a href="#">Dave's Precision Systems</a></li>
+                    <li class="box-label ">Playable</li>
+                    <li><a href="/roost ">Roost MX</a></li>
+                    <li><a href="# ">Polygonic Crusade</a></li>
+                    <li><a href="/maze ">MAZE</a></li>
 
-                <li class="box-label">Contact <span style="font-weight: 100;font-size: larger;color:#FFBF00">|</span> Social</li>
-                <li class="box-social"><a href="/contact"><i class="fas fa-envelope"></i></a></li>
-                <li class="box-social"><a href="https://www.instagram.com/litlabproductions"><i class="fab fa-instagram"></i></a></li>
-                <li class="box-social"><a href="https://www.youtube.com/channel/UCG6Y3kCD43Dwlt60hTRJZQA"><i class="fab fa-youtube"></i></a></li><br>
-                <li class="box-social"><a href="https://www.facebook.com/litlabproductions/"><i class="fab fa-facebook"></i></a></li>
-                <li class="box-social"><a href="https://www.reddit.com/user/litlabproductions"><i class="fab fa-reddit"></i></a></li>
-                <li class="box-social"><a href="https://www.github.com/litlabproductions"><i class="fab fa-github"></i></a></li>
+                    <li class="box-label ">Asset</li>
+                    <li><a href="# ">Dave's Precision Systems</a></li>
+
+                    <li class="box-label ">Contact <span style="font-weight: 2em;font-size: larger;color:#FFBF00 ">|</span> Social</li>
+                    <li class="box-social "><a href="/contact "><i class="fas fa-envelope" style="color: #FFBF00;"></i></a></li>
+                    <li class="box-social "><a href="https://www.instagram.com/litlabproductions "><i class="fab fa-instagram "></i></a></li>
+                    <li class="box-social "><a href="https://www.youtube.com/channel/UCG6Y3kCD43Dwlt60hTRJZQA "><i class="fab fa-youtube "></i></a></li><br>
+                    <li class="box-social "><a href="https://www.facebook.com/litlabproductions/ "><i class="fab fa-facebook "></i></a></li>
+                    <li class="box-social "><a href="https://www.reddit.com/user/litlabproductions "><i class="fab fa-reddit "></i></a></li>
+                    <li class="box-social "><a href="https://www.github.com/litlabproductions "><i class="fab fa-github "></i></a></li>
             </ul>
         </nav>
-        <!-- End LLP Nav -->
+
     </div>
     <!-- End Container Fluid -->
 
     <!-- main-container -->
-    <div class="container main-container">
-        <div class="col-md-12" style="padding-top: 5%;">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScb68p509QuJJPR6RYtbYKYZifkt5fAlis9uON4yHO_zzhjfw/viewform?embedded=true" width="640" height="900" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    <div class="container main-container" style="height: 110vh;width: 99vw;background: #17191b;">
+        <div class="col-md-12" style="padding-top: 5%;height:fit-content;width:100%">
+            <iframe class="google-form" src="https://docs.google.com/forms/d/e/1FAIpQLScb68p509QuJJPR6RYtbYKYZifkt5fAlis9uON4yHO_zzhjfw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+            <!-- Spacing -->
+
             <!--  
             <form action="#" method="post">
                 <div class="row">
@@ -148,36 +154,15 @@
         </div>
     </div>
     <!-- end main-container -->
-
-
     <!-- LLP Footer -->
-    <footer>
-        <div class="container-fluid ">
-            <span style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC "><i class="fas fa-code" style="font-size: large;color: #f2893D"></i><span style="letter-spacing: .2em;"> </span>in<span style="letter-spacing: 0em;"> </span>
-            <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color:
-                #FFBF00;font-weight: 400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></span>
-            <p style="font-family: Poppins, sans-serif;line-height: 1.3em; "><span>©2019</span> <span href="https://www.litlabproductions.com/" style="font-size: large;color: #f2893D;font-weight: 400;letter-spacing: 0.025em; ">Lit Lab Productions</span><br><span>All Rights Reserved</span></p>
+    <footer style="z-index: 3;position: absolute;width: 100%;">
+        <div class="container-fluid" style="text-align: center;">
+            <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400;"><span style="color: #f2893D ">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing: -.1em; "> </span>
+            <i class="material-icons " style="font-size: 2.25rem;color: #f2893D ">whatshot</i><span style="letter-spacing: -.05em; "> </span>by <a style="font-family: 'Montserrat', sans-serif;color: #FFBF00;font-weight: 500;letter-spacing: 0.025em" href="https://www.litlabproductions.com/resume">David Guido</a></span>
+            <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500;"><span>©2019</span> <a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing: 0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
         </div>
     </footer>
-    <!-- end footer -->
 
-    <!-- Back-to-Top Button -->
-    <a href="#0 " class="cd-top " style="align-content: center; ">
-        <i class="material-icons " style="vertical-align: middle;;width: 100%;height:100%">arrow_upward
-            </i>
-    </a>
-    <!-- end Back-to-Top Button -->
-    </div>
-
-    <!-- Function to lock navigation when top menu is active -->
-    <script>
-        function lockScroll() {
-            if (document.getElementById("body").style.position == "fixed")
-                document.getElementById("body").style.position = "relative";
-            else
-                document.getElementById("body").style.position = "fixed";
-        }
-    </script>
 
     <!-- jQuery Script Import -->
     <script src="js/jquery-2.1.1.js "></script>

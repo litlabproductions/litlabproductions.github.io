@@ -44,8 +44,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'" />
+
     <!-- Keep the above 3 meta tags.
              They must come first in the head. 
              Any other head content must come after these tags. -->
@@ -81,9 +83,16 @@
     <!-- * 9/7/2019 Additions * -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&display=swap" rel="stylesheet">
 
+    <!-- Google Font -->
+
+    <!--  * Dark Theme Imports *  -->
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <!-- CSS Files -->
+    <link href="assets/css/material-dashboard.css?v=2.1.0" rel="stylesheet" />
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
     <!-- Internet Explorer Fallback: -->
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -95,7 +104,7 @@
 
 <!-- Body Section -->
 
-<body id="body" style="max-width: 100vw;background: #121212;">
+<body>
 
     <!-- Loading Animation Preloader -->
     <div id="preloader">
@@ -110,19 +119,18 @@
 
     <!-- Container Fluid-->
     <div class="container-fluid">
-
-        <!-- LLP Header  -->
-        <header class="box-header">
-            <div class="box-logo-dark">
-                <a href="index.html"><img src="images/nav-med-size-blk.png" style="height: 4.8em;padding-top:0.75em" alt="Logo"></a>
+        <!-- LLP header -->
+        <header class="box-header" id="header">
+            <div class="box-logo">
+                <a href="/home"><img src="images/nav-med-size-blk.png" height="65" alt="Logo"></a>
             </div>
-
-            <!-- Right Side Navigation -->
-            <a class="box-primary-nav-trigger" href="#0" onclick="lockScroll();">
-                <span class="box-menu-text"></span><span class="box-menu-icon"></span>
+            <!-- LLP-nav -->
+            <a class="box-primary-nav-trigger" href="#0">
+                <span class="box-menu-icon"></span>
             </a>
+            <!-- LLP-primary-nav-trigger -->
         </header>
-        <!-- End LLP header -->
+        <!-- end LLP header -->
 
         <!-- LLP Nav -->
         <nav>
@@ -130,13 +138,13 @@
                 <br>
                 <li><a href="/index">Home</a></li>
                 <li><a href="/portfolio">Portfolio</a></li>
-                <li><a href="/resume">Resume</a></li>
+                <li><a href="https://www.litlabproductions.com/resume">Resume</a></li>
                 <li><a href="/docs">Documentation</a></li>
                 <li><a href="/brand-colors">Brand Colors</a></li>
                 <li><a href="/overtier">Overtier</a></li>
 
                 <li class="box-label">Playable</li>
-                <li><a href="/roost" style="color: #FFBF00">&nbsp;&nbsp;&nbsp;Roost MX</a><i class="fas fa-circle" style="color: #FFBF00;font-size: x-small;padding-bottom: 2px;"></i></li>
+                <li><a href="/roost" style="color: #FFBF00">&nbsp;&nbsp;&nbsp;Roost MX</a><i class=" fas fa-circle " style="color: #FFBF00;font-size: small;padding-bottom: 8px"></i></li>
                 <li><a href="#">Polygonic Crusade</a></li>
                 <li><a href="/maze">MAZE</a></li>
 
@@ -157,114 +165,160 @@
     </div>
     <!-- End Container Fluid -->
 
+
     <!-- main-container -->
-    <div class="col-md-12" style="max-width:100vw;background: #121212;">
+    <div class="col-md-12" style="max-width:100vw;background: #17191b;padding-right: 0%;padding-left: 0%;">
 
         <!-- Roost Web Game iFrame -->
-        <div class="col-md-9" style="padding:3%;padding-bottom: 10%;">
+        <div class="col-md-8" style="padding-left:2%;padding-right:3%;padding-bottom: 5%;">
             <div id="iframe-parent" class="iframe-parent">
-                <iframe id="resp-iframe" class="resp-iframe" src="https://www.litlabproductions.com/Roost/roost-raw" allowfullscreen></iframe>
+                <iframe src="" allowfullscreen id="resp-iframe" class="resp-iframe"></iframe>
+                <!--https://www.litlabproductions.com/Roost/roost-raw  -->
                 <button id="iframe-button" class="iframe-button"><i style="text-shadow: 0 0 10px #51ff5c;height: 100%;width: 100%;" class="fas fa-arrows-alt"></i></button>
             </div>
         </div>
 
-        <!-- Roost Logo -->
-        <div class="col-md-3" style="padding-top: 20vh;padding-bottom: 2vh;">
-            <img style="max-width:25em;filter: drop-shadow(.1em .1em .25em #646464a1);" src="images/roost-logo07.png " alt="img/SiteLogoAnimFallback00.png " class="responsive img-responsive ">
-        </div>
 
-        <h3 style="color: #FFBF00;letter-spacing: .05em;">Controls</h3>
+
+
+        <!-- end LLP-intro -->
+
+
+
 
         <!-- Controls -->
-        <div class="col-md-3">
+        <div class="col-md-4" style="padding-top: 7.5%;">
+            <div class="control-grandparent">
+                <!-- Roost Logo -->
+                <div class="col-md-4" style="padding-bottom: 2.25%;width: 100%;">
+                    <div class="game-logo"><span style="color:#FFBF00;letter-spacing: .05em;">ROOST</span><span style="letter-spacing: -.05em;">&nbsp;</span><span style="color:#F2893D;letter-spacing: 0em;">MX</span>
 
-            <!-- Controls Column One -->
-            <div class="col-md-1" style="text-align: right;width: fit-content;">
-                <h4 style="color: #29ABCC;font-weight: 100em;">Accelerate&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">W</span></h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; ">Lean Left&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">A</span></h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; ">Lean Front&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; "><i class="fas fa-arrow-up "></i></span></h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; ">Shift Down&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; ">N</span></h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; ">Menu&nbsp;&nbsp;&nbsp;<span style="color: #F2893D;font-weight: 100em; "><i class="fas fa-times "></i></span></h4>
-            </div>
+                    </div>
+                </div>
+                <h3 style="color:#FFBF00;">Controls</h3>
 
-            <!-- Controls Column Two -->
-            <div class="col-md-1 " style="text-align: left;width: fit-content;">
-                <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">S</span>&nbsp;&nbsp;&nbsp;Brake</h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">D</i></span>&nbsp;&nbsp;&nbsp;Lean Right</h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; "><i class="fas fa-arrow-down "></i></span>&nbsp;&nbsp;&nbsp;Lean Back</h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">M</span>&nbsp;&nbsp;&nbsp;Shift Up</h4>
-                <h4 style="color: #29ABCC;font-weight: 100em; "><span style="color: #F2893D;font-weight: 100em; ">R</span>&nbsp;&nbsp;&nbsp;Respawn</h4>
+                <div class="control-parent">
+                    <!-- Controls Column One -->
+                    <div class="col-md-2" style="text-align: right;width: 50%">
+                        <div class="resp-card">
+                            <p style="color: #29ABCC; ">Accelerate&nbsp;&nbsp;&nbsp;<span style="color: #F2893D; ">W</span></p>
+                            <p style="padding-right:2px;color: #29ABCC; ">Lean Left&nbsp;&nbsp;&nbsp;<span style="color: #F2893D; ">A</span></p>
+                            <p style="color: #29ABCC; ">Lean Front&nbsp;&nbsp;&nbsp;<span style="color: #F2893D; "><i class="fas fa-arrow-up "></i></span></p>
+                            <p style="color: #29ABCC; ">Shift Down&nbsp;&nbsp;&nbsp;<span style="color: #F2893D; ">N</span></p>
+                            <p style="color: #29ABCC; ">Menu&nbsp;&nbsp;&nbsp;<span style="color: #F2893D; "><i class="fas fa-times "></i></span></p>
+                        </div>
+                    </div>
+
+
+                    <!-- Controls Column Two -->
+                    <div class="col-md-2 " style="text-align: left;width: 50%">
+                        <div class="resp-card">
+                            <p style="color: #29ABCC; "><span style="color: #F2893D; ">S</span>&nbsp;&nbsp;&nbsp;Brake</p>
+                            <p style="color: #29ABCC; "><span style="color: #F2893D; ">D</span>&nbsp;&nbsp;&nbsp;Lean Right</p>
+                            <p style="color: #29ABCC; "><span style="color: #F2893D; "><i class="fas fa-arrow-down "></i></span>&nbsp;&nbsp;&nbsp;Lean Back</p>
+                            <p style="color: #29ABCC; "><span style="color: #F2893D; ">M</span>&nbsp;&nbsp;&nbsp;Shift Up</p>
+                            <p style="color: #29ABCC; "><span style="color: #F2893D; ">R</span>&nbsp;&nbsp;&nbsp;Respawn</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
+
         <!-- Share -->
-        <div class="col-md-3 " style="padding-top: 1%;">
-            <h3 style="color: #FFBF00;letter-spacing: .05em;padding-left: 0%;">Share</h3>
-            <ul class="social-ul " style="padding-left: 3% ">
+        <div class="col-md-3 ">
+            <div class="share-section">
+                <h3 style="color:#FFBF00; ">Share</h3>
+                <ul class="social-ul ">
 
-                <!-- Share via Facebook -->
-                <li class="box-social "><a href="https://www.facebook.com/sharer/sharer.php?u=%20https%3A//www.litlabproductions.com/roost "><i class="fab fa-facebook-f " ></i></a></li>
+                    <!-- Share via Facebook -->
+                    <li class="box-social "><a href="https://www.facebook.com/sharer/sharer.php?u=%20https%3A//www.litlabproductions.com/roost "><i class="fab fa-facebook-f " ></i></a></li>
 
-                <!-- Share via Twitter -->
-                <li class="box-social "><a href="https://twitter.com/intent/tweet?text=https%3A//www.litlabproductions.com/roost%0ARoost%20MX%0AMotocross%20Sandbox%20Demo%0A%0Aby%20@LitLabProd%0APlay%20free%20games%20in%20your%20web%20browser"><i class="fab fa-twitter " ></i></a></li>
-            </ul>
+                    <!-- Share via Twitter -->
+                    <li class="box-social "><a href="https://twitter.com/intent/tweet?text=https%3A//www.litlabproductions.com/roost%0ARoost%20MX%0AMotocross%20Sandbox%20Demo%0A%0Aby%20@LitLabProd%0APlay%20free%20games%20in%20your%20web%20browser
+                        "><i class="fab fa-twitter " ></i></a></li>
+
+
+                </ul>
+            </div>
         </div>
     </div>
 
     <!-- Details Section -->
-    <div class="col-md-12" style="max-width:100vw;background: #121212;">
+    <div class="col-md-12 " style="max-width:100vw;background: #17191b; ">
 
-        <div class="col-md-12 " style="padding-right: 10%;padding-left: 3%;">
-            <div class="col-md-7">
+        <div class="col-md-12 " style="padding-right: 3%;padding-left: 3%; ">
+            <div class="col-md-7 " style="padding-right: 3%; ">
 
-                <!-- Details Label -->
-                <h3 style="color: #FFBF00;letter-spacing: .05em;padding-left: 0%; ">Details</h3>
+                <!-- Features Label -->
+                <h3 style="color:#FFBF00; ">Features</h3>
 
                 <!-- Detail Section 00 -->
-                <h4 style="padding-top: 0.75em;color:#F2893D;padding-left:1%;padding-top: 1%; ">Core Control System</h4>
-                <div style="padding-left:2%;padding-right: 2%; ">
-                    <p style="font-size: 2rem "><i>>Lean back over whoops</i>, at the <i>base of a berm</i>, or to <i>preload</i> off the <i>base of a jump</i></p>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em; ">
+                    <h4 style="color:#F2893D;padding-left:1%;padding-top: 1%; ">Core Control System</h4>
+                    <div style="padding-left:2%;padding-right: 2%; ">
+                        <p class="card-desc ">Lean back over whoops, at the base of a berm, or to preload off the base of a jump</p>
+                    </div>
                 </div>
 
                 <!-- Detail Section 01 -->
-                <h4 style="color:#F2893D;padding-left:1%;padding-top: 3%; ">The Whip System</h4>
-                <div style="padding-left:2%;padding-right: 2%; ">
-                    <p style="font-size: 2rem ">Full control of the bikes rotation while airborne.<i> Pull left, right, backward</i> or <i>push forward</i></p>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em;margin: 4vh 0 ">
+                    <h4 style="color:#F2893D;padding-left:1%;padding-top: 1%; ">Whip System</h4>
+                    <div style="padding-left:2%;padding-right: 2%; ">
+                        <p class="card-desc ">Full control of the bikes rotation while airborne. Pull left, right, backward or push forward</p>
+                    </div>
                 </div>
 
                 <!-- Detail Section 02 -->
-                <h4 style="color:#F2893D;padding-left:1%;padding-top:3% ">The Color System</h4>
-                <div style="padding-left:2%;padding-right: 2%; ">
-                    <p style="font-size: 2rem ">Eight customizable bike parts using <i>16,777,216</i> possible hex colors or 6 premade textures</p>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em;margin: 4vh 0 ">
+                    <h4 style="color:#F2893D;padding-left:1%;padding-top:1%; ">Color System</h4>
+                    <div style="padding-left:2%;padding-right: 2%; ">
+                        <p class="card-desc ">Eight customizable bike parts using <i>16,777,216</i> possible hex colors or 6 premade textures</p>
+                    </div>
                 </div>
 
                 <!-- Detail Section 03 -->
-                <h4 style="color:#F2893D;padding-left:1%;padding-top: 3%; ">Made with Lightweight Render Pipeline</h4>
-                <div style="padding-left:2%;padding-right: 2%; ">
-                    <p style="font-size: 2rem ">Lightweight build ideal for WebGL builds</p>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em;margin: 4vh 0 ">
+                    <h4 style="color:#F2893D;padding-left:1%;padding-top: 1%; ">Made with URP</h4>
+                    <div style="padding-left:2%;padding-right: 2%; ">
+                        <p class="card-desc ">Lightweight build ideal for WebGL builds</p>
+                    </div>
                 </div>
-            </div>
 
+            </div>
             <!-- Alternative Host Options -->
-            <div class="col-md-5" style="padding-left: 5vw;">
-                <div class="col-md-5 " style="padding-top: 2%;width: fit-content;">
-                    <h3 style="color: #FFBF00;letter-spacing: .05em;line-height: 1em;">Alternative Host Options</h3>
-                    <p style="color: #b6b6b6;font-size: 2rem;line-height: 1.2em;padding-left: 1vw;">Performance problems?<br>Choose an option to swap the iFrame source</p>
-                    <h4 style="color: #F2893D;font-weight: 150em;padding-left: 1vw;">&nbsp;&nbsp;&nbsp;&nbsp;Current<span style="color: rgb(184, 184, 184); ">: </span>&nbsp;&nbsp;&nbsp;<span id="host-current-label" style="color: #b6b6b6;font-weight: 400em;">Lit Lab Productions</h4></span>
-                        <h4 style="color: #F2893D;font-weight: 150em;padding-left: 1vw;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Option<span style="color: rgb(184, 184, 184); ">: </span>&nbsp;&nbsp;<a id="host-option-label" href="javascript:void(0);" style="color: #29ABCC;font-weight: 400em; ">Simmer.io</h4></a>
+            <div class="col-md-5 ">
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em;margin: 4vh 0 ">
+
+                    <div>
+                        <h3>Host Options</h3>
+                        <p class="subtitle ">Having problems?<br>Choose an option to swap the iFrame source</p>
+                    </div>
+
+                    <div style=" display: flex;flex-direction: row;width: 100%;height: 100% ">
+                        <button onclick="swapIcon(); " class="swap-icon " style="padding-right: .25em;padding-left: .25em; ">
+                            <i id="swap-button " class="fas fa-retweet " data-fa-transform="rotate-90 "></i>
+
+                        </button>
+                        <div class="host-options" style="padding-left: 0;">
+                            <span style="color: #F2893D;">&nbsp;Current<span style="color: rgb(184, 184, 184); ">:</span>&nbsp;&nbsp;&nbsp;<span id="host-current-label" style="color: #b6b6b6;font-weight: 400em;letter-spacing: .05em;">LLP</span></span><br>
+                            <span style="color: #F2893D;">&nbsp;&nbsp;&nbsp;Option<span style="color: rgb(184, 184, 184); ">: </span>&nbsp;&nbsp;<a id="host-option-label" href="javascript:void(0);" style="color: #29ABCC;font-weight: 400em;letter-spacing: .05em; ">Simmer.io</a></span>
+                        </div>
+
+                    </div>
                 </div>
 
                 <!-- Bug Report / Contact Links -->
-                <div class="col-md-5 " style="padding-top: 3%;width: fit-content; ">
-                    <h3 style="padding-bottom: 1%;color: #FFBF00;letter-spacing: .05em; ">Find an Bug?<br>Have a suggestion?</h3>
-                    <h5 style="padding-bottom: 2%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bug " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/bug-report " style="color: #29ABCC; ">Submit a Bug Report</a></h5>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em; margin: 4vh 0 ">
+                    <h3>Find a Bug?<br>Have a Suggestion?</h3>
+                    <h5 style="padding-bottom: 1%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-bug " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/bug-report " style="color: #29ABCC; ">Submit a Bug Report</a></h5>
                     <h5>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-envelope " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/contact " style="color: #29ABCC; ">Send Me a Message</a></h5>
                 </div>
-
                 <!-- More Playable Games Section -->
-                <div class="col-md-5 " style="padding-top: 3%;width: fit-content; ">
-                    <h3 style="padding-bottom: 1%;color: #FFBF00;letter-spacing: .05em; ">More Playable Games</h3>
-                    <h5 style="padding-bottom: 2%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shield-alt " style="color: #F2893D; "></i>&nbsp;&nbsp;<a style="color: #29ABCC; ">Polygonic Crusade (Coming soon)</a></h5>
+                <div class="resp-card " style="width:100%;padding: 0.5em 1.5em 1em 2em;margin: 4vh 0 ">
+
+                    <h3>More Games</h3>
+                    <h5 style="padding-bottom: 1%; ">&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-shield-alt " style="color: #F2893D; "></i>&nbsp;&nbsp;<a style="color: #29ABCC; ">Polygonic Crusade<br><span style="padding-left: 2.75em; ">(Coming soon)</span></a></h5>
                     <h5>&nbsp;&nbsp;&nbsp;&nbsp;<i class="fas fa-circle " style="color: #F2893D; "></i>&nbsp;&nbsp;<a href="/maze " style="color: #29ABCC; ">MAZE</a></h5>
                 </div>
             </div>
@@ -273,27 +327,28 @@
     <!-- end main-container -->
 
     <!-- LLP Footer -->
-    <footer style="max-width: 100vw; ">
+    <footer>
 
         <!-- Spacing -->
-        <div class="col-md-12 " style="width:100%;background: #121212;padding-left: 0%;padding-right: 0%; ">
-            <!-- Spacing OUTSIDE Footer -->
-            <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
-            <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
-            <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
+        <div class="col-md-12 " style="width:100%;background: #17191b;padding-left: 0%;padding-right: 0%; ">
+
+
 
             <!-- Spacing INSIDE Footer -->
-            <div class="h-30 " style="padding-left: 0%;width:100%;background: #1b1b1b; "></div>
+            <div class="h-30 " style="padding-left: 0%;width:100%;background: #121212; "></div>
         </div>
 
-        <!-- LLP Author Section -->
-        <div class="container-fluid ">
-            <span style="font-family: Poppins, sans-serif;line-height: .6em;color:#29ABCC "><i class="fas fa-code " style="font-size: large;color: #f2893D "></i><span style="letter-spacing: .2em; "> </span>in<span style="letter-spacing: 0em; "> </span>
-            <i class="material-icons " style="font-size: large;font-weight: 400;color: #f2893D ">whatshot</i> by <a style="font-family: Poppins, sans-serif;color: #FFBF00;font-weight: 400;letter-spacing: 0.025em;font-size: large; " href="/resume ">David Guido</a></span>
-            <p style="font-family: Poppins, sans-serif;line-height: 1.3em; "><span>©2019</span> <span href="https://www.litlabproductions.com/ " style="font-size: large;color: #f2893D;font-weight: 400;letter-spacing: 0.025em; ">Lit Lab Productions</span><br><span>All Rights Reserved</span></p>
+
+        <div class="container-fluid " style="text-align: center; ">
+            <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400; "><span style="color: #f2893D ">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing:
+                        -.1em; "> </span>
+            <i class="material-icons " style="font-size: 2.25rem;color: #f2893D ">whatshot</i><span style="letter-spacing: -.05em; "> </span>by <a style="font-family: 'Montserrat', sans-serif;color: #FFBF00;font-weight: 500;letter-spacing: 0.025em
+                        " href="https://www.litlabproductions.com/resume">David Guido</a></span>
+            <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500; "><span>©2019</span> <a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing:
+                        0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
         </div>
     </footer>
-    <!-- end footer -->
+
 
     <!-- Back-to-Top Button -->
     <a href="#0 " class="cd-top " style="align-content: center; ">
@@ -301,23 +356,37 @@
     </a>
     <!-- end Back-to-Top Button -->
 
+    <script>
+        function swapIcon() {
+            swapSource();
+
+        }
+    </script>
+
+
     <!-- Swap iFrame Source Script -->
     <script>
         var hostOptionLabel = document.getElementById("host-option-label");
         var iframe = document.getElementById("resp-iframe");
         var currentLabel = document.getElementById("host-current-label");
         var optionLabel = document.getElementById("host-option-label");
+        var swapButton = document.getElementById("swap-icon");
+
 
         hostOptionLabel.addEventListener('click', swapSource);
+        swapButton.addEventListener('click', swapSource);
+
+
+
 
         function swapSource() {
             if (iframe.src == "https://www.litlabproductions.com/Roost/roost-raw") {
                 iframe.src = "https://i.simmer.io/@LitLabProd/roost";
                 currentLabel.innerText = "Simmer.io";
-                optionLabel.innerText = "Lit Lab Productions";
+                optionLabel.innerText = "LLP";
             } else {
                 iframe.src = "https://www.litlabproductions.com/Roost/roost-raw";
-                currentLabel.innerText = "Lit Lab Productions";
+                currentLabel.innerText = "LLP";
                 optionLabel.innerText = "Simmer.io";
             }
         }
@@ -325,7 +394,7 @@
 
     <!-- Fullscreen Script -->
     <script>
-        var button = document.getElementById("iframe-button");
+        var button = document.getElementById("iframe-button ");
         button.addEventListener('click', fullscreen);
         // when you are in fullscreen, ESC and F11 may not be trigger by keydown listener. 
         // so don't use it to detect exit fullscreen
@@ -341,7 +410,7 @@
         function fullscreen() {
             if (document.fullscreenEnabled || document.webkitFullscreenEnabled ||
                 document.mozFullScreenEnabled || document.msFullscreenEnabled) { // Check for fullscreen availability
-                var iframe = document.getElementById("resp-iframe"); // Element which will be fullscreen
+                var iframe = document.getElementById("resp-iframe "); // Element which will be fullscreen
 
                 if (iframe.requestFullscreen) // Request fullscreen access
                     iframe.requestFullscreen();
@@ -364,16 +433,6 @@
         }
     </script>
 
-    <!-- Function to lock navigation when top menu is active -->
-    <script>
-        function lockScroll() {
-            if (document.getElementById("body").style.position == "fixed")
-                document.getElementById("body").style.position = "relative ";
-            else
-                document.getElementById("body").style.position = "fixed";
-        }
-    </script>
-
     <!-- jQuery Script Import -->
     <script src="js/jquery-2.1.1.js "></script>
 
@@ -386,6 +445,18 @@
 
     <!-- Custom Script Import -->
     <script src="js/custom.js "></script>
+
+    <!-- * Dark Theme Scripts *-->
+    <!--   Core JS Files   -->
+    <script src="../assets/js/core/jquery.min.js "></script>
+    <script src="../assets/js/core/popper.min.js "></script>
+    <script src="../assets/js/core/bootstrap-material-design.min.js "></script>
+    <script src="https://unpkg.com/default-passive-events "></script>
+    <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js "></script>
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js "></script>
+    <!--  Google Maps Plugin    -->
+
 
     <!-- Google Analytics Script Import -->
     <script>
@@ -404,6 +475,8 @@
         ga('create', 'UA-76796224-1', 'auto');
         ga('send', 'pageview');
     </script>
+
+
 </body>
 
 </html>

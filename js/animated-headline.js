@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
     //set animation timing
-    var animationDelay = 2100,
+    var animationDelay = 3000,
         //loading bar effect
         barAnimationDelay = 3800,
         barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
@@ -11,27 +11,11 @@ jQuery(document).ready(function($) {
         selectionDuration = 500,
         typeAnimationDelay = selectionDuration + 800,
         //clip effect 
-        revealDuration = 1500,
-        revealAnimationDelay = 500; // Wait time after anim finishes.
-
-    /* Nov 23, 2019
-    	//set animation timing
-    	var animationDelay = 2250,
-    		//loading bar effect
-    		barAnimationDelay = 3800,
-    		barWaiting = barAnimationDelay - 3000, //3000 is the duration of the transition on the loading bar - set in the scss/css file
-    		//letters effect
-    		lettersDelay = 50,
-    		//type effect
-    		typeLettersDelay = 150,
-    		selectionDuration = 500,
-    		typeAnimationDelay = selectionDuration + 800,
-    		//clip effect 
-    		revealDuration = 1000,
-    		revealAnimationDelay = 1500;
-    */
+        revealDuration = 600,
+        revealAnimationDelay = 1500;
 
     initHeadline();
+
 
     function initHeadline() {
         //insert <i> element for each letter of a changing word
