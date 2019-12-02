@@ -289,13 +289,13 @@
                                          font-weight: 300;
                                          line-height: 1.8;
                                          color: #Ccccccdc;
-                                         background: #17191b;
+                                         background: #121212;
                                          letter-spacing: .1rem;
                                      }
                                      /*
     LLP Styles
 
-    
+                                        
 */
                                      
                                      .resume-button {
@@ -398,6 +398,11 @@
                                          height: 100%
                                      }
                                      
+                                     .control-parent {
+                                         width: 100%;
+                                         height: 100%
+                                     }
+                                     
                                      .swap-icon {
                                          color: #FFBF00;
                                          filter: drop-shadow(0 0 .02em #1b1b1b54);
@@ -412,10 +417,8 @@
                                      }
                                      
                                      .resp-card {
-                                         padding-top: 2vh;
-                                         padding-bottom: 1vh;
-                                         padding-right: 1vw;
-                                         padding-left: 0vw;
+                                         margin-right: -2em;
+                                         padding: 1em;
                                          height: fit-content;
                                          width: fit-content;
                                          background: #1b1b1b;
@@ -448,7 +451,7 @@
                                          width: 406px;
                                          height: 720px;
                                          border: double .15em #646464ef;
-                                         border-radius: 1.0em;
+                                         border-radius: .5em;
                                          color: rgb(0, 0, 0);
                                          background: #1b1b1bef;
                                          max-width: 90vw;
@@ -456,7 +459,7 @@
                                      }
                                      
                                      .iframe-parent {
-                                         z-index: 0;
+                                         z-index: 1;
                                          position: relative;
                                          padding-top: 56.25%;
                                          filter: drop-shadow(0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12));
@@ -528,7 +531,12 @@
                                      }
                                      
                                      .main-container {
-                                         padding: 100px 0;
+                                         max-width: 100%;
+                                         width: 100%;
+                                         border-radius: .5em;
+                                         background-color: #17191b;
+                                         border-color: #000000;
+                                         border-width: 2em;
                                      }
                                      
                                      .center {
@@ -600,11 +608,10 @@
                                      }
                                      
                                      p {
-                                         font-size: 1.45vw;
+                                         font-size: 1.35vw;
                                          font-weight: 500;
                                          color: #dbdbdbdc;
                                          line-height: 1.5em;
-                                         padding-left: 1vw;
                                          font-family: 'Montserrat', sans-serif;
                                          cursor: default;
                                      }
@@ -931,7 +938,7 @@
                                      }
                                      
                                      .box-primary-nav {
-                                         padding: 10vh 0 0;
+                                         padding: 8vh 0 0;
                                      }
                                      
                                      .box-primary-nav li {
@@ -1352,7 +1359,7 @@
                                          background: #121212;
                                          color: rgba(204, 204, 204, 0.863);
                                          letter-spacing: .075em;
-                                         padding: 0 0;
+                                         padding: 3em 0;
                                          font-size: 1.75rem;
                                          font-weight: 300;
                                      }
@@ -1646,11 +1653,12 @@
                                              font-size: 2.25rem;
                                          }
                                          .resp-card {
-                                             padding-right: 1vw;
+                                             padding: 1em;
+                                             font-weight: 500;
                                          }
                                          p {
                                              font-size: 1.15vw;
-                                             font-weight: 500;
+                                             font-weight: 600;
                                          }
                                          .share-section {
                                              padding-left: 7.5%;
@@ -1660,6 +1668,10 @@
                                      @media (max-width: 1150px) {
                                          .resume-iframe {
                                              height: 150em;
+                                         }
+                                         .host-options {
+                                             font-weight: 600;
+                                             font-size: 2rem;
                                          }
                                      }
                                      
@@ -1682,18 +1694,15 @@
                                              font-size: 1.75rem;
                                              font-weight: 600;
                                          }
-                                         .resp-card {
-                                             padding-left: 1vw;
-                                             padding-right: 2vw;
-                                         }
                                          .control-grandparent {
-                                             padding-right: 0%;
                                              width: 100%;
-                                             padding-left: 5%;
                                          }
                                          .overtier-container {
                                              width: 100%;
                                              padding-left: 0%;
+                                         }
+                                         .game-logo {
+                                             padding-top: 8vh;
                                          }
                                      }
                                      
@@ -1731,7 +1740,7 @@
                                              font-size: 1.85rem;
                                          }
                                          p {
-                                             font-size: 1.5rem;
+                                             font-size: 1.4rem;
                                              font-weight: 600;
                                          }
                                      }
@@ -1746,12 +1755,11 @@
                                          .subtitle {
                                              font-size: 1.75rem;
                                          }
-                                         .resp-card {
-                                             padding-left: 4vw;
-                                             padding-right: 5vw;
-                                         }
                                          .resume-iframe {
                                              height: 375vh;
+                                         }
+                                         p {
+                                             font-size: 1.25rem;
                                          }
                                      }
                                      
@@ -1775,11 +1783,26 @@
                                              font-size: 1.65rem;
                                          }
                                          .host-options {
-                                             font-weight: 600;
-                                             font-size: 2rem;
+                                             font-weight: 500;
+                                             font-size: 1.75rem;
                                          }
                                          .box-primary-nav .box-label {
-                                             font-size: 1.5rem;
+                                             font-size: 1.75rem;
+                                         }
+                                     }
+                                     
+                                     @media only screen and (max-width: 450px) {
+                                         p {
+                                             font-size: 1.15rem;
+                                         }
+                                         .swap-icon {
+                                             margin-left: -1em;
+                                         }
+                                         h3 {
+                                             font-size: 1.9rem;
+                                         }
+                                         h5 {
+                                             font-size: 1.25rem;
                                          }
                                      }
                                      
@@ -1803,27 +1826,53 @@
                                              font-size: 1.65rem;
                                          }
                                          h3 {
-                                             font-size: 2rem;
+                                             font-size: 1.8rem;
                                          }
                                          .host-options {
-                                             font-weight: 600;
-                                             font-size: 1.55rem;
-                                         }
-                                         .resp-card {
-                                             padding-left: 1vw;
-                                             padding-right: 2vw;
-                                         }
-                                         p {
-                                             font-size: 1.35rem;
+                                             font-weight: 500;
+                                             font-size: 1.45rem;
                                          }
                                          .resume-iframe {
                                              height: 255em;
+                                         }
+                                         p {
+                                             font-size: 1.05rem;
+                                         }
+                                         .resp-card {
+                                             padding: .5em
                                          }
                                      }
                                      
                                      @media only screen and (max-width: 385px) {
                                          .resume-iframe {
                                              height: 260em;
+                                         }
+                                         p {
+                                             font-size: 1.15rem;
+                                         }
+                                         .game-logo {
+                                             padding-top: 10vh;
+                                             font-size: 3.5rem;
+                                         }
+                                         .host-options {
+                                             font-weight: 500;
+                                             font-size: 1.45rem;
+                                             margin-left: -0.75rem;
+                                         }
+                                         h5 {
+                                             font-size: 1.25rem;
+                                         }
+                                     }
+                                     
+                                     @media only screen and (max-width: 365px) {
+                                         p {
+                                             font-size: 1.05rem;
+                                         }
+                                         h3 {
+                                             font-size: 1.7rem;
+                                         }
+                                         h5 {
+                                             font-size: 1.15rem;
                                          }
                                      }
                                      
@@ -1834,16 +1883,16 @@
                                              line-height: 1em;
                                          }
                                          h3 {
-                                             font-size: 1.75rem;
+                                             font-size: 1.45rem;
                                          }
                                          h4 {
                                              font-size: 1.75rem;
                                          }
                                          h5 {
-                                             font-size: 1.4rem;
+                                             font-size: 1rem;
                                          }
                                          p {
-                                             font-size: 1.05rem;
+                                             font-size: 0.85rem;
                                          }
                                          .subtitle {
                                              font-size: 1.25rem;
@@ -1852,10 +1901,13 @@
                                              font-size: 1.5rem;
                                          }
                                          .host-options {
-                                             font-weight: 500;
-                                             font-size: 1.15rem;
+                                             font-weight: 400;
+                                             font-size: 1.25rem;
                                          }
                                          .resume-iframe {
                                              height: 275em;
+                                         }
+                                         .resp-card {
+                                             padding: .25em;
                                          }
                                      }
