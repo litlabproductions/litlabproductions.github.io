@@ -398,7 +398,6 @@ body {
     height: 100%;
     font-weight: 300;
     color: #333;
-    padding: 150px 0 250px;
     background: -webkit-linear-gradient( rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.4)), url(../images/portfolio08.png);
     background: linear-gradient(rgba(18, 18, 18, 0.4), rgba(18, 18, 18, 0.4)), url(../images/portfolio08.png);
     background-attachment: fixed;
@@ -1584,7 +1583,7 @@ footer span {
 ==================================================*/
 
 .top-bar {
-    padding: 150px 0 0em;
+    padding: 150px 0 10em;
 }
 
 .top-bar h1 {
