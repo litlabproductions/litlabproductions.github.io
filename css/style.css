@@ -707,7 +707,7 @@ h3 {
     text-transform: none;
     letter-spacing: .05em;
     padding-bottom: 1%;
-    font-family: 'SF Display';
+    font-family: 'Montserrat';
     text-transform: none;
     cursor: default;
 }
@@ -718,7 +718,7 @@ h4 {
     font-weight: 700;
     line-height: 1.25em;
     letter-spacing: .05em;
-    font-family: 'SF Display';
+    font-family: 'Montserrat';
     text-transform: none;
 }
 
@@ -727,7 +727,7 @@ h5 {
     font-size: 2rem;
     line-height: 1.35em;
     font-weight: 400;
-    font-family: 'SF Display';
+    font-family: 'Montserrat';
     cursor: default;
 }
 
