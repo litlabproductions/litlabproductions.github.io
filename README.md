@@ -1,4 +1,4 @@
-# Lit Lab Productions (Webpage)
+# The Official Lit Lab Productions Webpage
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;Built with [HTML5](https://html.com/), [Javascript](https://www.javascript.com/) & [Bootstrap](https://getbootstrap.com/)
 ***
 <br/><br/>
