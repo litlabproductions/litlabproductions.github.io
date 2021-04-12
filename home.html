@@ -358,10 +358,10 @@
         <!-- LLP Footer -->
         <footer>
             <div class="container-fluid" style="text-align: center;">
-                <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400;"><span style="color: #f2893D ">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing: -.1em; "> </span>
+                <span style="padding-left: 1vw;font-family: 'Montserrat', sans-serif;line-height:2.5em;color:#29ABCC;font-weight: 400;"><span style="color: #f2893D">made</span><span style="letter-spacing: .1em; "> </span>with<span style="letter-spacing: -.1em; "> </span>
                 <i class="material-icons " style="font-size: 2.25rem;color: #f2893D ">whatshot</i><span style="letter-spacing: -.05em; "> </span>by <a style="font-family: 'Montserrat', sans-serif;color: #FFBF00;font-weight: 500;letter-spacing: 0.025em"
                     href="/resume-view">David Guido</a></span>
-                <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500;"><span>©2021</span> <a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing: 0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
+                <p style="font-family: 'Montserrat', sans-serif;font-size: 1.75rem;letter-spacing: 0.05em;font-weight: 500;"><span style="color: #29ABCC">©</span><span id="year" style="color: #f2893D">2021</span><a href="https://www.litlabproductions.com/ " style="font-size: 1.75rem;color: #f2893D;font-weight: 500;letter-spacing: 0.025em; ">Lit Lab Productions</a><br><span>All Rights Reserved</span></p>
             </div>
         </footer>
         
@@ -382,7 +382,7 @@
         
         
         
-<h5 style="font-weight: 400;" id="date">00</h5>
+<h5 style="font-weight: 400;" id="year">00</h5>
 
 
         <!-- Back-to-Top Button -->
@@ -415,6 +415,18 @@
         }
     </script>
 
+        <!-- Function to set current date -->
+    <script>
+        function setYearOnly() {
+            var today = new Date();
+            var year = today.getFullYear();
+            
+            var out = document.getElementById("year");
+
+            out.innerHTML = "" + year;
+        }
+    </script>
+    
     <!-- jQuery Script Import -->
     <script src="js/jquery-2.1.1.js "></script>
 
