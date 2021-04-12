@@ -1,4 +1,6 @@
 # The Lit Lab Productions Webpage
+
+### This repository hosts the Lit Lab Productions webpage 
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;Built with [HTML5](https://html.com/), [Javascript](https://www.javascript.com/) & [Bootstrap](https://getbootstrap.com/)
 ***
 <br/><br/>
