@@ -417,13 +417,26 @@
 
         <!-- Function to set current date -->
     <script>
-        function setYearOnly() {
+        function setYear() {
             var today = new Date();
-            var year = today.getFullYear();
-            
-            var out = document.getElementById("year");
 
-            out.innerHTML = "" + year;
+            var day = today.getDate();
+            var month = today.getMonth() + 1;
+            var year = today.getFullYear();
+
+            if (day < 10) {
+                day = '0' + day
+            }
+            if (month < 10) {
+                month = '0' + month
+            }
+
+            var out = document.getElementById("date");
+            
+            var str = "abcdefghijklmnop";
+            var substr = str.substring(str.length-4, str.length);
+
+            out.innerHTML = year;
         }
     </script>
     
