@@ -8,7 +8,6 @@
 ![ezgif com-optimize](https://github.com/litlabproductions/litlabproductions.github.io/blob/master/images/llp-webpage-04.png)
 ![ezgif com-optimize](https://github.com/litlabproductions/litlabproductions.github.io/blob/master/images/llp-webpage-02.jpg)
 ![ezgif com-optimize](https://github.com/litlabproductions/litlabproductions.github.io/blob/master/images/llp-webpage-00.png)
-![ezgif com-optimize](https://github.com/litlabproductions/litlabproductions.github.io/blob/master/images/llp-webpage-01.png)
 
 <br>
 
